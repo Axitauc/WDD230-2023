@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&display=swap");
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+.content {
+  height: 1100px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #e392a6;
+  color: white;
+  border: 2px #ffe5ec;
+  border-radius: 1rem;
+  height: 250px;
+  text-align: center;
+  font-family: "Satisfy", cursive;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 70px;
+  padding-left: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1rem;
+  font-weight: 300;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Castoro Titling", cursive;
+  font-weight: 10;
+}
+
+main {
+  display: block;
+}
+
+.profile {
+  height: 160px;
+  width: 160px;
+  margin-left: 80px;
+  border-radius: 1rem;
+}
+
+footer {
+  align-items: center;
+  background-color: #e694a9;
+  color: white;
+  border: 2px #ffe5ec;
+  border-radius: 1rem;
+  height: 80px;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Alegreya Sans SC", sans-serif;
+  line-height: 5px;
+}
+
+ul {
+  background-color: #f1e7e9;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 0.5rem;
+  text-align: center;
+}
