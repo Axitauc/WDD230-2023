@@ -94,6 +94,13 @@ main h5 {
   font-size: 20px;
 }
 
+.active {
+  background-color: #cbb26b;
+}
+.active a {
+  color: black;
+}
+
 /* Hamburger menu
 #navbar {
   display: none;

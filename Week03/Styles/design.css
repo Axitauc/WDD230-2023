@@ -68,3 +68,51 @@ main div h4 {
   font-size: 20px;
   color: black;
 }
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.headertitle {
+  font-size: 40px;
+  font-family: "Cinzel", serif;
+}
+
+.subheadertitle {
+  font-size: 18px;
+  font-family: "Baskervville", serif;
+}
+
+.signature {
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+.NavBar {
+  font-size: auto;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.heading1 {
+  font-size: 50px;
+  font-family: "Konkhmer Sleokchher", cursive;
+}
+
+.heading2 {
+  font-size: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.bodytext {
+  font-size: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
