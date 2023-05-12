@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+header {
+  background-color: black;
+  text-align: left;
+  line-height: 15px;
+  color: #cbb26b;
+}
+
+header h1 {
+  font-family: "Cinzel", serif;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+header h2 {
+  font-family: "Baskervville", serif;
+  font-size: 18px;
+  font-weight: 50;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+header p {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+header ul {
+  padding-inline-start: 0px;
+}
+
+header ul li {
+  list-style: none;
+  width: 100%;
+}
+
+header ul li a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #cbb26b;
+  padding: 15px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+header ul li a:hover {
+  background-color: #cbb26b;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+}
+
+main {
+  color: black;
+  padding-bottom: 50px;
+}
+
+main h3 {
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Konkhmer Sleokchher", cursive;
+  font-size: 50px;
+  line-height: 5px;
+  margin: 0px;
+}
+
+main p {
+  text-align: justify;
+  padding-top: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18.5px;
+}
+
+main h5 {
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+}
+
+/* Hamburger menu
+#navbar {
+  display: none;
+}
+
+#navbar.active {
+  display: flex;
+}
+
+#menu-open {
+  display: block;
+}
+
+#menu-open.active {
+  display: none;
+}
+
+#menu-close {
+  display: none;
+}
+#menu-close.active {
+  display: block;
+} */
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 1px 1px;
+  margin-top: 2%;
+  color: #cbb26b;
+  letter-spacing: 1px;
+}

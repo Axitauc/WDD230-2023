@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+main div h6 {
+  text-align: center;
+  font-family: "Konkhmer Sleokchher", cursive;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+main ul li {
+  text-align: justify;
+  padding-right: 150px;
+  padding-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18.5px;
+}
+
+main ul {
+  padding-left: 150px;
+}

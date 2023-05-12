@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+main div h4 {
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.palette1 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Cinzel", serif;
+  font-size: 18.5px;
+  color: #cbb26b;
+  background-color: black;
+}
+
+.palette2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18.5px;
+  color: #cbb26b;
+  background-color: black;
+}
+
+.palette3 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 18.5px;
+  color: black;
+  background-color: #cbb26b;
+}
+
+.palette4 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Konkhmer Sleokchher", cursive;
+  font-size: 30px;
+  color: black;
+}
+
+.palette5 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.palette6 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  color: black;
+}
