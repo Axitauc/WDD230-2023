@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+header {
+  background-color: #37414f;
+  text-align: left;
+  line-height: 15px;
+  color: #d8c691;
+}
+
+header div {
+  display: flex;
+}
+
+header p {
+  display: block;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+header h2 {
+  font-family: "Cinzel", serif;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+header div nav ul a {
+  text-decoration: none;
+  color: #d8c691;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  header ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 100%;
+  }
+}

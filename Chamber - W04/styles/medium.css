@@ -1,0 +1,9 @@
+@media screen and (min-width: 700px) {
+  header ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .content {
+    margin: 0 auto;
+  }
+}
