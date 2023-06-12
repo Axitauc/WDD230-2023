@@ -5,3 +5,8 @@ menubutton.addEventListener("click", () => {
   document.querySelector("#menu-open").classList.toggle("active");
   document.querySelector("#menu-close").classList.toggle("active");
 });
+
+// this is a comment
+/* this is also a comment */
+
+

@@ -1,25 +1,246 @@
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
+  .content {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header-content-width {
+    width: 100%;
+    margin: auto;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
   header ul li {
     list-style: none;
-    width: 100%;
     text-align: center;
   }
 
   header ul li a {
     display: block;
     text-decoration: none;
-    padding: 1rem;
   }
 
-  img {
+  nav ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .p-nav-bar {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .nav-items {
+    gap: 1px;
+  }
+
+  .page-title {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .social-media-icons-align a img {
+    margin-top: 10px;
+    width: 30px;
+  }
+
+  .logo {
+    padding-top: 30px;
+    width: 60px;
+  }
+
+  .main_size {
+    grid-template-areas:
+      "h h"
+      "e e"
+      "w w"
+      "n n"
+      "s1 s1"
+      "s2 s2";
+
+    max-width: 650px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .footer {
     width: 100%;
   }
 
-  main {
-    margin: 0 auto;
-    width: 350px;
+  .footer-d3 {
+    flex-direction: column;
   }
-  header p {
-    font-size: 1.2rem;
+
+  .container-sp-3 {
+    display: none;
+  }
+
+  .container-hero-photo {
+    grid-area: h;
+  }
+
+  .container-hero-photo h1 {
+    font-size: 40px;
+    padding-left: 20px;
+  }
+
+  .container-hero-photo button {
+    font-size: 10px;
+    color: white;
+    background-color: #1976d2;
+    border-radius: 15px;
+    padding: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+  }
+
+  .container-news {
+    grid-area: n;
+  }
+  .container-event {
+    grid-area: e;
+  }
+  .container-weather {
+    grid-area: w;
+  }
+  .container-join {
+    display: none;
+  }
+  .container-sp-3 {
+    display: none;
+  }
+  .container-sp-1 {
+    grid-area: s1;
+  }
+
+  .container-sp-2 {
+    grid-area: s2;
+  }
+
+  .meeting p {
+    font-weight: 200;
+    font-size: 10px;
+    padding-top: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .footer_info > div {
+    flex-direction: column;
+  }
+  /* Hamburger menu */
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav-button a {
+    font-size: 10px;
+  }
+
+  #menu-button {
+    display: block;
+    height: 25px;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    border-color: white;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  #menu-open {
+    display: none;
+  }
+
+  #menu-open.active {
+    display: block;
+  }
+
+  #menu-close {
+    display: none;
+  }
+  #menu-close.active {
+    display: block;
+  }
+
+  .miraflores-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .macchupichu-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .cerro7colores-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .amazonas-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .titicaca-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .huascaran-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content-discover-page {
+    margin: auto;
+    max-width: 300px;
+  }
+
+  .display-areas h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container-news p {
+    font-size: 11px;
+  }
+
+  .container-news h2 {
+    font-size: 12px;
   }
 }
+
+/* Join */
