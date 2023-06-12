@@ -52,7 +52,7 @@ header {
   font-weight: 500;
   font-size: 50px;
   letter-spacing: 3px;
-  font-weight: 00;
+  font-weight: 900;
 }
 
 .logo-display div:nth-child(1) {
@@ -214,7 +214,7 @@ nav div a img {
   grid-area: n;
 }
 .container-news p {
-  font-size: 17px;
+  font-size: 12.5px;
   text-align: center;
 }
 
@@ -227,6 +227,11 @@ nav div a img {
   grid-area: s1;
 }
 
+.container-sp-1 div {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .container-sp-2 {
   background: #fff;
   color: black;
@@ -235,6 +240,12 @@ nav div a img {
   margin: 10px;
   grid-area: s2;
 }
+
+.container-sp-2 div {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .container-sp-3 {
   background: #fff;
   color: black;
@@ -522,8 +533,9 @@ h2 {
   border-radius: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: block;
   margin: 0 auto;
 }
@@ -560,7 +572,7 @@ h2 {
 }
 
 .container-hero-photo button {
-  font-size: 15px;
+  font-size: 12px;
   color: white;
   background-color: #1976d2;
   border-radius: 15px;
