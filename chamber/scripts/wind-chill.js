@@ -21,7 +21,6 @@ function windchill(windspeed, temperature) {
   windspeedElt.textContent = windspeed;
   windchillElt.textContent = windchillMsg;
 
-  
 }
 
 // Call the windchill function with placeholder values

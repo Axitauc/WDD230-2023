@@ -3,6 +3,10 @@
     width: 100%;
   }
 
+  picture img {
+    width: 100%;
+  }
+
   .header {
     width: 100%;
   }
@@ -66,8 +70,8 @@
       "s1 s1"
       "s2 s2";
 
-    max-width: 650px;
     width: 100%;
+    max-width: 650px;
     margin: auto;
   }
 
