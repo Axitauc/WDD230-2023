@@ -12,8 +12,8 @@
   }
 
   .header-content-width {
+    max-width: 700px;
     width: 100%;
-    margin: auto;
   }
 
   header ul {
@@ -94,6 +94,7 @@
   .container-hero-photo h1 {
     font-size: 40px;
     padding-left: 20px;
+    padding-top: 10px;
   }
 
   .container-hero-photo button {
@@ -105,7 +106,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     position: absolute;
-    top: 110px;
+    top: 85px;
     left: 40px;
   }
 
