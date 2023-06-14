@@ -296,10 +296,10 @@ nav div a img {
 .container-hero-photo h1 {
   position: absolute;
   text-align: left;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-left: 40px;
   padding-right: 5px;
-  padding-top: 30px;
+  padding-top: 62px;
   color: rgb(58, 83, 184);
   text-shadow: #e3f2fd 3px 3px;
   font-family: "Francois One", sans-serif;
@@ -589,7 +589,7 @@ h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   position: absolute;
-  top: 125px;
+  top: 145px;
   left: 40px;
 }
 
@@ -598,7 +598,7 @@ h2 {
 .content-discover-page {
   margin: auto;
   max-width: 700px;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -606,8 +606,24 @@ h2 {
   padding-bottom: 30px;
 }
 
+.miraflores-img p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: white;
+  padding: 16px;
+}
+
 .macchupichu-img {
   padding-bottom: 30px;
+}
+
+.macchupichu-img p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: white;
+  padding: 16px;
 }
 
 .display-areas h1 {
@@ -619,14 +635,45 @@ h2 {
   padding-bottom: 30px;
 }
 
+.cerro7colores-img p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: white;
+  padding: 16px;
+}
+
 .amazonas-img {
   padding-bottom: 30px;
+}
+
+.amazonas-img p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: white;
+  padding: 16px;
 }
 
 .titicaca-img {
   padding-bottom: 30px;
 }
 
-.huascaran-img {
-  padding-bottom: 30px;
+.titicaca-img p {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 200;
+  background-color: white;
+  padding: 16px;
+}
+
+.last-visit {
+  color: #1976d2;
+  background-color: #fff;
+  padding: 10px;
+  padding-left: 400px;
+  padding-right: 400px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
 }
