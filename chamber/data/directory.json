@@ -1,0 +1,114 @@
+{
+  "members": [
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    },
+    {
+      "name": "XYZ Company",
+      "street": "123 Main Street",
+      "city": "Rexburg",
+      "state": "ID",
+      "zip": "83440",
+      "phone": "(208) 597-6543",
+      "websiteURL": "https://www.rexburg.org",
+      "imageURL": "./images/directory/rexburg.png",
+      "membershipLevel": "non-profit",
+      "adCopy": ""
+    }
+  ]
+}

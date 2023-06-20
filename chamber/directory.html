@@ -12,60 +12,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
 
-    <style>
-      main {
-        display: flex;
-        justify-content: center;
-      }
-      section {
-        width: 50%;
-        margin: 1rem;
-        padding: 1rem;
-        max-width: 500px;
-        background-color: white;
-        border-radius: 20px;
-        color: black;
-      }
-      label {
-        display: block;
-        font-size: 1rem;
-      }
-      input {
-        display: block;
-        margin-bottom: 2rem;
-        padding: 5px;
-      }
-      textarea {
-        display: block;
-        margin-bottom: 2px;
-      }
-      .myradio {
-        display: inline;
-        margin: 0px 5px 0px 0px;
-      }
-
-      .mysubmit {
-        font-size: 15px;
-        background-color: #1976d2;
-        color: white;
-        border-radius: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-
-      @media (max-width: 800px) {
-        main {
-          display: block;
-        }
-      }
-
-      form {
-        padding-left: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-    </style>
-
     <!-- Favicon Configuration -->
     <link rel="icon" type="image/x-icon" href="./images/1.webp" />
 
@@ -77,6 +23,7 @@
     <!-- Links to the JS's files -->
     <script src="./scripts/general.js" defer></script>
     <script src="./scripts/wind-chill.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
   </head>
   <body class="content">
     <!-- Header -->
@@ -129,61 +76,15 @@
         </div>
       </nav>
     </header>
-    <body>
-      <main>
-        <section>
-          <form action="GET" action="subjoin2.html">
-            <label
-              >First Name
-              <input
-                name="fname"
-                type="text"
-                value=""
-                placeholder="Your first name"
-                size="30"
-                maxlength="30"
-                required
-            /></label>
-            <label
-              >Last Name
-              <input
-                name="lname"
-                type="text"
-                value=""
-                placeholder="Your first name"
-                size="30"
-                maxlength="30"
-                required
-            /></label>
-            <p>Temperature:</p>
-            <label>
-              <input class="myradio" name="tem" type="radio" value="hot" /> Hot
-            </label>
-            <label>
-              <input class="myradio" name="tem" type="radio" value="warm" />
-              Warm
-            </label>
-            <label>
-              <input class="myradio" name="tem" type="radio" value="cold" />
-              Cold
-            </label>
-            <label>
-              Description:
-              <textarea name="description" cols="40" rows="5"></textarea>
-              <input
-                class="mysubmit"
-                type="submit"
-                name="go"
-                value="Go and Do!"
-              />
-            </label>
-          </form>
-        </section>
-        <section>
-          <p>Text</p>
-        </section>
-      </main>
-    </body>
+    <main class="directory-main card">
+      <section>
+        <button>Grid</button>
+        <button>List</button>
+      </section>
+      <section class="directory-container">
+        <section class="cards"></section>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer_info">
         <div>
@@ -192,12 +93,13 @@
           /></a>
           <div class="footer-inf-1">
             <a class="footer-title" href="./index.html"
-              >The Lima Chamber of Commerce
-            </a>
+              >The Lima Chamber of Commerce</a
+            >
             <p>Av. Arequipa 398</p>
             <p>Lima 15046, Peru</p>
           </div>
         </div>
+
         <div>
           <a
             class="img-location-map-footer"
@@ -206,8 +108,8 @@
               class="footer-map-img"
               src="./images/Locator.png"
               alt="Chamber's Location"
-            />
-          </a>
+          /></a>
+
           <div class="footer-inf-2">
             <a href="https://goo.gl/maps/MUedfZTvbyK7bi8D7">Location Map</a>
             <p>inscripciones@camaracomercio.org.pe</p>

@@ -161,6 +161,7 @@
 
   .nav {
     width: 100%;
+    flex-direction: column;
   }
 
   .nav-button a {
@@ -170,14 +171,9 @@
   #menu-button {
     display: block;
     height: 25px;
-    margin-top: 50px;
     background-color: white;
     color: black;
     border-color: white;
-  }
-
-  .nav {
-    flex-direction: column;
   }
 
   .nav.active {
@@ -204,9 +200,17 @@
     height: 300px;
   }
 
+  .miraflores-img p {
+    font-size: 10px;
+  }
+
   .macchupichu-img img {
     width: 300px;
     height: 300px;
+  }
+
+  .macchupichu-img p {
+    font-size: 10px;
   }
 
   .cerro7colores-img img {
@@ -214,9 +218,17 @@
     height: 300px;
   }
 
+  .cerro7colores-img p {
+    font-size: 10px;
+  }
+
   .amazonas-img img {
     width: 300px;
     height: 300px;
+  }
+
+  .amazonas-img p {
+    font-size: 10px;
   }
 
   .titicaca-img img {
@@ -224,14 +236,14 @@
     height: 300px;
   }
 
-  .huascaran-img img {
-    width: 300px;
-    height: 300px;
+  .titicaca-img p {
+    font-size: 10px;
   }
 
   .content-discover-page {
     margin: auto;
     max-width: 300px;
+    padding-bottom: 10px;
   }
 
   .display-areas h1 {
@@ -248,4 +260,6 @@
   }
 }
 
-/* Join */
+.last-visit {
+  font-size: 12px;
+}

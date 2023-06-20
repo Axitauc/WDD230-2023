@@ -27,7 +27,6 @@ header {
   height: fit-content;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  padding-bottom: 25px;
   width: 100%;
   background-color: #1976d2;
 }
@@ -97,6 +96,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   margin: auto;
+  padding-bottom: 10px;
 }
 
 .nav-logo,
@@ -227,8 +227,9 @@ nav div a img {
 .container-sp-1 {
   background: #fff;
   color: black;
-  padding: 25px;
   border-radius: 12px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin: 10px;
   grid-area: s1;
 }
@@ -241,8 +242,8 @@ nav div a img {
 .container-sp-2 {
   background: #fff;
   color: black;
-  padding: 25px;
   border-radius: 12px;
+  padding-top: 25px;
   margin: 10px;
   grid-area: s2;
 }
@@ -475,7 +476,6 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 .container-sp-3 h2 {
@@ -602,6 +602,12 @@ h2 {
   padding-bottom: 40px;
 }
 
+.content-discover-page img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .miraflores-img {
   padding-bottom: 30px;
 }
@@ -671,9 +677,25 @@ h2 {
   color: #1976d2;
   background-color: #fff;
   padding: 10px;
-  padding-left: 400px;
-  padding-right: 400px;
   text-align: center;
   font-weight: 300;
   font-size: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cards section {
+  border: 2px solid black;
+  margin: 1rem;
+}
+
+.cards {
+  display: block;
+}
+
+.directory-card {
+  display: flex;
 }

@@ -1,27 +1,41 @@
-const button = document.querySelector("button");
+const inputbutton = document.querySelector(".button");
 const userinput = document.querySelector("#favchap");
 const mylist = document.querySelector("#list");
 
-button.addEventListener("click", () => {
+inputbutton.addEventListener("click", () => {
   // Make sure the input is not blank.
-  if (userinput.value == "null") {
+  if (userinput.value == "null" || userinput.value == "") {
     return;
   }
 
   // Create an li element.
-  newlistitem = document.createElement("li");
-
+  let newlistitem = document.createElement("li");
   // create a delete button
-  deletebutton = document.createElement("button");
+  let deletebutton = document.createElement("button");
+  // populate the li elements textContent or innerHTML with the input
+  newlistitem.appendChild(document.createTextNode(userinput.value));
 
-  // populate the li elements textContent or innerHTML the input
-  newlistitem.textContent = userinput.value;
+  newlistitem.style.color = "red";
+  newlistitem.style.backgroundColor = "lightblue";
+
+  // populate the button textContent with an ❌
   deletebutton.textContent = "❌";
-  newlistitem.append(deletebutton);
-  mylist.append(newlistitem);
+
+  // append the li element with the delete button
+  newlistitem.appendChild(deletebutton);
+
+  // append the li element with the delete button
+  mylist.appendChild(newlistitem);
+
+  // append the list element with the li element just created and appended with text and the delete button
+  // add an event listener to the delete button that removes the li element when clicked
   deletebutton.addEventListener("click", () => {
-    mylist.remove();
+    mylist.removeChild(newlistitem);
   });
+
+  // send the focus to the input element
   userinput.focus();
+
+  // change the input value to nothing or the empty string to clean up the interface for the user
   userinput.value = "";
 });
