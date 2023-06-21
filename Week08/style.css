@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  padding-top: 300px;
+}
+
+caption {
+  caption-side: bottom;
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.general-title {
+  background-color: rgb(38, 19, 83);
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+thead tr th {
+  background-color: rgb(230, 226, 239);
+  color: white;
+}
+
+.plans {
+  background-color: rgb(19, 73, 154);
+  font-size: 15px;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  padding: 0.5rem;
+  border: 1px solid rgb(231, 222, 232);
+}
+td {
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: 1px solid rgb(238, 237, 246);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(238, 237, 242);
+}
+
+.rdex {
+  color: rgb(154, 42, 74);
+}
+.check {
+  color: rgb(31, 10, 170);
+}
