@@ -673,7 +673,7 @@ h2 {
   padding: 16px;
 }
 
-.last-visit {
+.system-history {
   color: #1976d2;
   background-color: #fff;
   padding: 10px;
@@ -698,4 +698,16 @@ h2 {
 
 .directory-card {
   display: flex;
+}
+
+.shadow img {
+  transition: 1s ease;
+}
+
+.shadow img:hover {
+  box-shadow: 1px 1px #d3cef4, 2px 2px #d3cef4, 3px 3px #d3cef4, 4px 4px #d3cef4,
+    5px 5px #d3cef4, 6px 6px #d3cef4;
+  -webkit-transform: translateX(-15px);
+  transform: translateX(-15px);
+  transition: 0.1s ease;
 }
