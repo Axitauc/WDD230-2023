@@ -24,6 +24,7 @@
     <script src="./scripts/general.js" defer></script>
     <script src="./scripts/wind-chill.js" defer></script>
     <script src="./scripts/last-visit.js" defer></script>
+    <script src="./scripts/lazy-loading.js" defer></script>
   </head>
   <body class="content">
     <!-- Header -->
@@ -81,17 +82,17 @@
     </h1>
     <main class="content-discover-page">
       <section class="display-areas">
-        <div class="miraflores-img">
+        <div class="place-card">
           <h1>Miraflores City</h1>
-          <div class="shadow">
+          <picture class="shadow">
             <img
+              class="discover-imgs"
               src="./images/miraflores-op.jpg"
+              data-src="./images/miraflores-op.jpg"
               alt="Miraflores"
               loading="lazy"
-              height="500px"
-              width="500px"
             />
-          </div>
+          </picture>
           <p>
             Lima, the vibrant capital city of Peru, is a captivating blend of
             rich history, modernity, and cultural diversity. Situated along the
@@ -105,17 +106,17 @@
             who venture into its captivating embrace.
           </p>
         </div>
-        <div class="macchupichu-img">
+        <div class="place-card">
           <h1>Macchu Picchu</h1>
-          <div class="shadow">
+          <picture class="shadow">
             <img
+              class="discover-imgs"
               src="./images/macchu-picchu-op.jpg"
+              data-src="./images/macchu-picchu-op.jpg"
               alt="MacchuPicchu"
               loading="lazy"
-              height="500px"
-              width="500px"
             />
-          </div>
+          </picture>
           <p>
             Machu Picchu, nestled in the breathtaking Andes Mountains of Peru,
             is an ancient Incan citadel that elicits awe and wonder. This UNESCO
@@ -129,17 +130,17 @@
             unforgettable journey through history and nature.
           </p>
         </div>
-        <div class="cerro7colores-img">
+        <div class="place-card">
           <h1>Seven Colors Mountain</h1>
-          <div class="shadow">
+          <picture class="shadow">
             <img
+              class="discover-imgs"
               src="./images/cerro-7-colores-op.jpg"
+              data-src="./images/cerro-7-colores-op.jpg"
               alt="Cerro7Colores"
               loading="lazy"
-              height="500px"
-              width="500px"
             />
-          </div>
+          </picture>
           <p>
             Cerro de 7 Colores, also known as the Rainbow Mountain, is a
             mesmerizing natural wonder located in Peru. Situated in the Andes
@@ -153,17 +154,17 @@
             venture to witness its kaleidoscopic splendor.
           </p>
         </div>
-        <div class="amazonas-img">
+        <div class="place-card">
           <h1>Amazon River</h1>
-          <div class="shadow">
+          <picture class="shadow">
             <img
+              class="discover-imgs"
               src="./images/rio-amazonas-op.jpg"
+              data-src="./images/rio-amazonas-op.jpg"
               alt="Amazonas"
               loading="lazy"
-              height="500px"
-              width="500px"
             />
-          </div>
+          </picture>
           <p>
             The Amazon River, coursing through Peru, is an extraordinary natural
             marvel. With its vast expanse and powerful currents, it is the
@@ -177,17 +178,17 @@
             nature's splendor.
           </p>
         </div>
-        <div class="titicaca-img">
+        <div class="place-card">
           <h1>Titicaca Lake</h1>
-          <div class="shadow">
+          <picture class="shadow">
             <img
+              class="discover-imgs"
               src="./images/lago-titicaca-op.jpg"
+              data-src="./images/lago-titicaca-op.jpg"
               alt="LagoTiticaca"
               loading="lazy"
-              height="500px"
-              width="500px"
             />
-          </div>
+          </picture>
           <p>
             Lake Titicaca, nestled high in the Andes Mountains of Peru, is a
             breathtaking natural wonder. It is the largest lake in South America

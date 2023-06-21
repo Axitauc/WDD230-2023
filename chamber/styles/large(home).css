@@ -602,17 +602,11 @@ h2 {
   padding-bottom: 40px;
 }
 
-.content-discover-page img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.miraflores-img {
+.place-card {
   padding-bottom: 30px;
 }
 
-.miraflores-img p {
+.place-card p {
   text-align: justify;
   font-size: 14px;
   font-weight: 200;
@@ -620,57 +614,13 @@ h2 {
   padding: 16px;
 }
 
-.macchupichu-img {
-  padding-bottom: 30px;
-}
-
-.macchupichu-img p {
-  text-align: justify;
-  font-size: 14px;
-  font-weight: 200;
-  background-color: white;
-  padding: 16px;
+.place-card img[data-src] {
+  filter: blur(0.5rem);
 }
 
 .display-areas h1 {
   font-size: 30px;
   text-align: center;
-}
-
-.cerro7colores-img {
-  padding-bottom: 30px;
-}
-
-.cerro7colores-img p {
-  text-align: justify;
-  font-size: 14px;
-  font-weight: 200;
-  background-color: white;
-  padding: 16px;
-}
-
-.amazonas-img {
-  padding-bottom: 30px;
-}
-
-.amazonas-img p {
-  text-align: justify;
-  font-size: 14px;
-  font-weight: 200;
-  background-color: white;
-  padding: 16px;
-}
-
-.titicaca-img {
-  padding-bottom: 30px;
-}
-
-.titicaca-img p {
-  text-align: justify;
-  font-size: 14px;
-  font-weight: 200;
-  background-color: white;
-  padding: 16px;
 }
 
 .system-history {
@@ -680,6 +630,14 @@ h2 {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
+}
+
+.discover-imgs {
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards {
