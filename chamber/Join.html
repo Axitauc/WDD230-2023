@@ -175,6 +175,7 @@
               <textarea name="description" cols="40" rows="5"></textarea>
             </label>
             <input class="mysubmit" type="submit" name="go" value="Submit" />
+            <input type="hidden" name="todaysdate" id="hiddendate" value="" />
           </div>
         </form>
       </section>
@@ -246,5 +247,11 @@
         <p>| Last Modification: <span id="lastUpdated"></span></p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+      var dia = new Date();
+      var dateinput = document.querySelector("#hiddendate");
+      dateinput.value = dia.toLocaleDateString();
+    </script>
   </body>
 </html>
