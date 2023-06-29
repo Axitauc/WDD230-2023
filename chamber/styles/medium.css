@@ -48,6 +48,15 @@
     margin: auto;
   }
 
+  .discover-imgs {
+    height: 400px;
+    width: 400px;
+  }
+
+  .place-card p {
+    font-size: 11px;
+  }
+
   /* Hamburguer menu */
   .nav {
     display: flex;
@@ -148,5 +157,15 @@
 
   .container-news p {
     font-size: 14px;
+  }
+
+  .conditions,
+  .form {
+    width: 90%;
+  }
+
+  .main-join {
+    align-items: center;
+    flex-direction: column;
   }
 }

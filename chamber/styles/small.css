@@ -75,8 +75,9 @@
     margin: auto;
   }
 
-  .footer {
-    width: 100%;
+  .discover-imgs {
+    height: 300px;
+    width: 300px;
   }
 
   .footer-d3 {
@@ -141,9 +142,12 @@
     margin-right: 70px;
   }
 
+  .place-card p {
+    font-size: 10px;
+  }
+
   .footer {
     width: 100%;
-
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -258,8 +262,13 @@
   .container-news h2 {
     font-size: 12px;
   }
-}
 
-.last-visit {
-  font-size: 12px;
+  .last-visit {
+    font-size: 12px;
+  }
+
+  .conditions,
+  .form {
+    width: 90%;
+  }
 }
