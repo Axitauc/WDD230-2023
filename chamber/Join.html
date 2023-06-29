@@ -110,15 +110,17 @@
                 placeholder="Enter job title"
                 size="30"
                 maxlength="30"
+                minlength="7"
+                pattern="[A-Za-z -]{7,}"
                 required
             /></label>
             <label
               ><strong>Email</strong>
               <input
                 name="email"
-                type="text"
+                type="email"
                 value=""
-                placeholder="Enter email address"
+                placeholder="example@gmail.com"
                 size="30"
                 maxlength="30"
                 required
@@ -127,9 +129,9 @@
               ><strong>Cellphone</strong>
               <input
                 name="cellphone"
-                type="text"
+                type="tel"
                 value=""
-                placeholder="Enter cellphone number"
+                placeholder="(345)-890-89900"
                 size="30"
                 maxlength="30"
                 required
