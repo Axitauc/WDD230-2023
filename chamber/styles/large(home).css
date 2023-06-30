@@ -7,6 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 
 * {
   box-sizing: border-box;
@@ -20,7 +21,6 @@ html {
 /* 1. General Attributes  */
 .content {
   margin: 0 auto;
-  height: 1000px;
   background-color: #e3f2fd;
 }
 
@@ -329,6 +329,7 @@ picture img {
   display: flex;
   justify-content: center;
   gap: 40px;
+  padding-bottom: 20px;
 }
 .footer_info > div {
   display: flex;
@@ -755,4 +756,120 @@ textarea {
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Directory Page */
+
+.directory-main {
+  width: 100;
+  max-width: 1300px;
+  margin: 0 auto;
+  font-family: "Tenor Sans", sans-serif;
+}
+#directory-selector {
+  background-color: transparent;
+  text-align: center;
+  margin: 15px;
+}
+
+.directory-main section {
+  background-color: transparent;
+  border: none;
+}
+
+#directory-selector button {
+  color: white;
+  padding-top: 10px;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  background-color: #1976d2;
+  border: none;
+}
+
+#directory-selector button.active {
+  background-color: white;
+  color: #1976d2;
+}
+
+/* Cards view */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+  border-radius: 15px;
+}
+
+.cards h2 {
+  font-size: 20px;
+  margin: 1px;
+  padding-bottom: 20px;
+}
+
+.cards p {
+  margin: 5px;
+}
+
+.cards section {
+  text-align: center;
+  border: none;
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+/* .cards .gold-member {
+}
+.cards .silver-member {
+}
+.cards .bronze-member {
+}
+.cards .non-member {
+} */
+
+.cards a {
+  text-decoration: none;
+  color: white;
+  background-color: #1976d2;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+/* List View */
+
+.list {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.list h2 {
+  font-size: 15px;
+  text-align: left;
+}
+
+.list p {
+  font-size: 13px;
+}
+
+.list a {
+  text-align: right;
+}
+
+.list section img {
+  display: none;
+}
+
+.list section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  padding-top: 20px;
 }
