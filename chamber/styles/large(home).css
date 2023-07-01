@@ -821,21 +821,29 @@ textarea {
   padding-bottom: 50px;
 }
 
-/* .cards .gold-member {
+.gold-member:hover {
+  box-shadow: 10px 10px #ffd700;
 }
-.cards .silver-member {
+.silver-member:hover {
+  box-shadow: 10px 10px #c0c0c0;
 }
-.cards .bronze-member {
+.bronze-member:hover {
+  box-shadow: 10px 10px #e3994f;
 }
-.cards .non-member {
-} */
+.non-member:hover {
+  box-shadow: 10px 10px #7e93e8;
+}
 
-.cards a {
-  text-decoration: none;
-  color: white;
+.cards button {
   background-color: #1976d2;
   padding: 10px 25px;
   border-radius: 20px;
+  margin-top: 20px;
+}
+
+.cards button a {
+  color: white;
+  text-decoration: none;
 }
 
 /* List View */
@@ -846,6 +854,11 @@ textarea {
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.list button {
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 .list h2 {
@@ -872,4 +885,30 @@ textarea {
   margin-top: 10px;
   padding: 10px;
   padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+/* Thank you Page */
+.gratitude-message {
+  background-color: white;
+  padding: 40px;
+  padding-left: 65px;
+  padding-right: 65px;
+  max-width: 500px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 155px;
+  margin-bottom: 155px;
+  font-family: "Tenor Sans", sans-serif;
+}
+
+.gratitude-message h1 {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.gratitude-message p {
+  text-align: justify;
+  font-size: 13px;
+  padding-top: 10px;
 }

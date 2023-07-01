@@ -45,7 +45,7 @@ const displayMembers = (members) => {
     <p>${member.street}</p>
     <p> ${member.city}, ${member.state} ${member.zip}</p>
     <p>${member.phone}</p>
-    <p><a href="${member.websiteURL}">Visit</a></p>`;
+    <button><a href="${member.websiteURL}">Visit</a></button>`;
     cards.appendChild(card);
   });
 };
