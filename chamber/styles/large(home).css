@@ -134,6 +134,11 @@ nav ul li a:hover {
   font-size: 20px;
 }
 
+nav div ul li .active {
+  color: #1976d2;
+  background-color: white;
+}
+
 nav div ul {
   display: flex;
 }
