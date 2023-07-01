@@ -208,8 +208,8 @@ picture img {
   display: grid;
   grid-template-areas:
     "e h h s1"
-    "w h h s2"
-    "j n n s3";
+    "w h h s1"
+    "j n n s1";
   margin-left: 20px;
   margin-right: 20px;
   max-width: 1300px;
@@ -238,7 +238,7 @@ picture img {
   text-align: center;
 }
 
-.container-sp-1 {
+.containers-spotlights {
   background: #fff;
   color: black;
   border-radius: 12px;
@@ -246,34 +246,18 @@ picture img {
   padding-bottom: 25px;
   margin: 10px;
   grid-area: s1;
+  text-align: center;
 }
 
-.container-sp-1 div {
+.spotlight1 img,
+.spotlight2 img,
+.spotlight3 img {
+  height: 170px;
+}
+
+.containers-spotlights div {
   padding-left: 70px;
   padding-right: 70px;
-}
-
-.container-sp-2 {
-  background: #fff;
-  color: black;
-  border-radius: 12px;
-  padding-top: 25px;
-  margin: 10px;
-  grid-area: s2;
-}
-
-.container-sp-2 div {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
-.container-sp-3 {
-  background: #fff;
-  color: black;
-  padding: 25px;
-  border-radius: 12px;
-  margin: 10px;
-  grid-area: s3;
 }
 
 .container-join {

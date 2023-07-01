@@ -39,7 +39,7 @@
     grid-template-areas:
       "h h"
       "n n"
-      "s1 s2"
+      "s1 s1"
       "j j"
       "e w";
     margin-left: 20px;
@@ -105,10 +105,12 @@
   #menu-close {
     display: none;
   }
+
   #menu-close.active {
     display: block;
   }
-  .container-sp-3 {
+
+  .spotlight3 {
     display: none;
   }
 
