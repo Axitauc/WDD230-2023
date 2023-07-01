@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
@@ -761,7 +760,7 @@ textarea {
 /* Directory Page */
 
 .directory-main {
-  width: 100;
+  width: 100%;
   max-width: 1300px;
   margin: 0 auto;
   font-family: "Tenor Sans", sans-serif;
