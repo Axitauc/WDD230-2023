@@ -85,11 +85,13 @@ nav ul li a {
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
+  border-radius: 25px;
 }
 
 nav ul li a:hover {
   background-color: white;
   color: black;
+  border-radius: 25px;
 }
 
 .nav {
@@ -98,6 +100,7 @@ nav ul li a:hover {
   align-items: center;
   margin: auto;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .nav-logo,
@@ -115,19 +118,20 @@ nav ul li a:hover {
 /*1.5 Meeting Announcement */
 .meeting {
   display: none;
+  padding-bottom: 15px;
 }
 
 .meeting p {
   color: white;
   font-weight: 200;
   font-size: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #2871b9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(88, 95, 235);
   border-radius: 50px;
   text-align: center;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .nav-logo {
@@ -304,6 +308,12 @@ picture img {
   grid-area: w;
 }
 
+figcaption {
+  display: block;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
 .container-hero-photo h1 {
   position: absolute;
   text-align: left;
@@ -393,10 +403,8 @@ picture img {
 
 .footer-title {
   text-decoration: none;
-  font-family: "Cinzel Decorative", cursive;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
 }
 
 .footer-d3 {
@@ -510,7 +518,6 @@ h2 {
 
 .container-weather img {
   height: 80px;
-  display: inline;
 }
 
 .container-weather h2 {
@@ -530,7 +537,7 @@ h2 {
 }
 
 .weather-div {
-  display: flex;
+  text-align: center;
   padding-left: 20px;
   gap: 10px;
 }
