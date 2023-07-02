@@ -114,6 +114,29 @@
     display: none;
   }
 
+  .area-2-contact-page {
+    flex-direction: column;
+  }
+
+  .social-media-contact {
+    width: 90%;
+    max-width: 900px;
+  }
+
+  .mapa,
+  .form-contact {
+    margin: 0 auto;
+  }
+
+  .form-contact {
+    margin-top: 30px;
+  }
+
+  .mapa iframe {
+    height: 200px;
+    width: 90%;
+  }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -168,6 +191,11 @@
 
   .conditions,
   .form {
+    width: 90%;
+  }
+
+  .redes-sociales {
+    max-width: 900px;
     width: 90%;
   }
 

@@ -695,6 +695,64 @@ section.conditions {
   margin-bottom: 20px;
 }
 
+.form-contact {
+  padding: 40px;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  font-size: 10px;
+  height: 430px;
+}
+
+.area-2-contact-page {
+  display: flex;
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.redes-sociales {
+  background-color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+  font-weight: 100;
+}
+
+.redes-sociales h2 {
+  font-size: 30px;
+}
+
+.social-media-contact {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  gap: 50px;
+  margin: 0 auto;
+}
+
+.social-media-contact div {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-contact div img {
+  width: 80px;
+}
+
+.social-media-contact div p {
+  text-align: center;
+}
+
+.mapa {
+  text-align: center;
+  margin-right: 20px;
+}
+
 section.form {
   font-size: 10px;
 }

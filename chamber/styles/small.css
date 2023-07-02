@@ -303,4 +303,39 @@
     margin-bottom: 155px;
     font-family: "Tenor Sans", sans-serif;
   }
+
+  .redes-sociales {
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .form-contact div {
+    margin-left: 0px;
+  }
+
+  .social-media-contact {
+    gap: 10px;
+  }
+
+  .mapa iframe {
+    max-width: 600px;
+    width: 90%;
+    padding-left: 0px;
+  }
+
+  .form-contact {
+    margin-top: 30px;
+  }
+
+  .redes-sociales h2 {
+    font-size: 18px;
+  }
+
+  .social-media-contact p {
+    font-size: 11px;
+  }
+
+  .social-media-contact div img {
+    width: 65px;
+  }
 }

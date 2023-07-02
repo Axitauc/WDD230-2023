@@ -26,7 +26,8 @@
 
     <!-- Links to the JS's files -->
     <script src="./scripts/general.js" defer></script>
-    <script src="./scripts/directory.js" defer></script>
+    <script src="./scripts/wind-chill.js" defer></script>
+    <script src="./scripts/spotlights.js" defer></script>
   </head>
   <body class="content">
     <!-- Header -->
@@ -84,12 +85,99 @@
         </div>
       </nav>
     </header>
-    <main class="directory-main card">
-      <section id="directory-selector">
-        <button id="grid" class="active">Grid</button>
-        <button id="list">List</button>
+
+    <main>
+      <section class="redes-sociales">
+            <h2>Follow Us in Social Media!</h2>
+            <div class="social-media-contact">
+                <div>
+                    <img src="./images/HomePage/fb_icon.png" alt="fb-icon" />
+                    <p>Facebook</p>
+                </div>
+                <div>
+                    <img src="./images/HomePage/twitter-logo.webp" alt="twitter-icon" />
+                    <p>Twitter</p>
+                </div>
+                <div>
+                    <img src="./images/HomePage/instagram-logo.webp" alt="ig-icon" />
+                    <p>Instagram</p>
+                </div>
+                <div>
+                    <img src="./images/HomePage/Link_icon.png" alt="linkedin-icon" />
+                    <p>LinkedIn</p>
+                </div>
+                <div>
+                    <img src="./images/HomePage/youtube-logo.png"  alt="youtube-icon" />
+                    <p>YouTube</p>
+                </div>
+            </div>
       </section>
-      <section id="data" class="cards"></section>
+      <div class="area-2-contact-page">
+            <section>
+                <div class="mapa">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3901.641796868526!2d-77.037147!3d-12.0681488!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95d59a5a841%3A0x7ea6a88269b2a514!2sCamara%20Nacional%20de%20Comercio%20del%20Per%C3%BA%20Oficial!5e0!3m2!1sen!2sus!4v1688255905981!5m2!1sen!2sus"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                </div>
+            </section>
+            <section class="form-contact">
+                <form method="get" action="./index.html">
+                <div>
+                    <label
+                    ><strong>First Name</strong>
+                    <input
+                        name="fname"
+                        type="text"
+                        value=""
+                        placeholder="Enter first name"
+                        size="30"
+                        maxlength="30"
+                        required
+                    /></label>
+                    <label
+                    ><strong>Last Name</strong>
+                    <input
+                        name="lname"
+                        type="text"
+                        value=""
+                        placeholder="Enter first name"
+                        size="30"
+                        maxlength="30"
+                        required
+                    /></label>
+                    <label
+                    ><strong>Email</strong>
+                    <input
+                        name="email"
+                        type="email"
+                        value=""
+                        placeholder="example@gmail.com"
+                        size="30"
+                        maxlength="30"
+                        required
+                    /></label>
+                    <label
+                    ><strong>Cellphone</strong>
+                    <input
+                        name="cellphone"
+                        type="tel"
+                        value=""
+                        placeholder="(345)-890-89900"
+                        size="30"
+                        maxlength="30"
+                        required
+                    /></label>
+                    <input class="mysubmit" type="submit" name="go" value="Submit" />
+                    <input type="hidden" name="todaysdate" id="hiddendate" value="" />
+                </form>
+            </section>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer_info">
@@ -108,6 +196,7 @@
             <p>Lima 15046, Peru</p>
           </div>
         </div>
+
         <div>
           <a
             class="img-location-map-footer"
