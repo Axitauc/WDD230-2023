@@ -156,7 +156,7 @@ nav div a img {
 }
 
 .nav-items {
-  gap: 150px;
+  gap: 90px;
 }
 
 .active-nav-button {
@@ -338,8 +338,8 @@ figcaption {
 }
 
 .img-logo-footer {
-  width: 130px;
-  padding-left: 10px;
+  width: 100px;
+  padding-top: 20px;
 }
 
 .img-location-logo-footer {
