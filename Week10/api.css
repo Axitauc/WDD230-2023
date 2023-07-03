@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Rubik", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 7px;
+  font-size: 40px;
+}
+
+p {
+  padding-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+figcaption {
+  text-transform: capitalize;
+}
