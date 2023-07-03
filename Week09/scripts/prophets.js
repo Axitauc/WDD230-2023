@@ -1,18 +1,16 @@
 const url = "./data/prophets.json";
 
 const displayProphets = (prophets) => {
-  const cards = document.querySelector("div.cards"); // select the output container element
+  const cards = document.querySelector("div.cards");
 
   prophets.forEach((prophet) => {
-    // Create elements to add to the div.cards element
     let card = document.createElement("section");
     card.innerHTML = `<h2>${prophet.name} ${prophet.lastname}</h2>
       <h3>Born on ${prophet.birthdate} on ${prophet.birthplace}.</h3>
-      <img src="${prophet.imageurl}" height="440" width="340" loading="lazy" alt="Portrait of ${prophet.name} ${prophet.lastname}">`;
+      <img src="${prophet.imageurl}" height="300" width="250" loading="lazy" alt="Portrait of ${prophet.name} ${prophet.lastname}">`;
     cards.appendChild(card);
   });
-  
-}; 
+};
 
 async function getProphetData() {
   const response = await fetch(url);
@@ -22,7 +20,8 @@ async function getProphetData() {
   } else {
     console.error("There was an error loading the data.");
     const cards = document.querySelector("div.cards");
-    cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
+    cards.innerHTML =
+      "<section><h1>There was an error loading the data</h1></section>";
   }
 }
 
@@ -36,7 +35,8 @@ function getProphetDataWithThen() {
       } else {
         console.error("There was an error loading the data.");
         const cards = document.querySelector("div.cards");
-        cards.innerHTML = "<section><h1>There was an error loading the data</h1></section>";
+        cards.innerHTML =
+          "<section><h1>There was an error loading the data</h1></section>";
       }
     })
     .then((data) => {
