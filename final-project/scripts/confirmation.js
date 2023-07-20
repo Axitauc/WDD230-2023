@@ -8,18 +8,22 @@ const fruit3 = localStorage.getItem("fruit3");
 const specialInstructions = localStorage.getItem("specialInstructions");
 
 // Mostrar los valores en la página de confirmación
-document.getElementById("first-name-output").textContent = `First Name: ${firstName}`;
+document.getElementById(
+  "first-name-output"
+).textContent = `First Name: ${firstName}`;
 document.getElementById("email-output").textContent = `Email: ${email}`;
 document.getElementById("phone-output").textContent = `Phone: ${phone}`;
 document.getElementById("fruit1-output").textContent = `Fruit 1: ${fruit1}`;
 document.getElementById("fruit2-output").textContent = `Fruit 2: ${fruit2}`;
 document.getElementById("fruit3-output").textContent = `Fruit 3: ${fruit3}`;
-document.getElementById("special-instructions-output").textContent = `Special Instructions: ${specialInstructions}`;
+document.getElementById(
+  "special-instructions-output"
+).textContent = `Special Instructions: ${specialInstructions}`;
 
 // Obtener los datos de las frutas desde el archivo fruits.json
-fetch('fruits.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("fruits.json")
+  .then((response) => response.json())
+  .then((data) => {
     const fruitsData = data;
 
     // Calcular el total de los valores nutricionales
@@ -29,8 +33,10 @@ fetch('fruits.json')
     let totalSugar = 0;
     let totalCalories = 0;
 
-    [fruit1, fruit2, fruit3].forEach(fruitName => {
-      const selectedFruit = fruitsData.find(fruit => fruit.name === fruitName);
+    [fruit1, fruit2, fruit3].forEach((fruitName) => {
+      const selectedFruit = fruitsData.find(
+        (fruit) => fruit.name === fruitName
+      );
       if (selectedFruit) {
         totalCarbohydrates += selectedFruit.nutritions.carbohydrates;
         totalProtein += selectedFruit.nutritions.protein;
@@ -41,27 +47,44 @@ fetch('fruits.json')
     });
 
     // Mostrar los valores nutricionales totales en la página de confirmación
-    document.getElementById("carbohydrates-output").textContent = `Carbohydrates: ${totalCarbohydrates.toFixed(2)}`;
-    document.getElementById("protein-output").textContent = `Protein: ${totalProtein.toFixed(2)}`;
-    document.getElementById("fat-output").textContent = `Fat: ${totalFat.toFixed(2)}`;
-    document.getElementById("sugar-output").textContent = `Sugar: ${totalSugar.toFixed(2)}`;
-    document.getElementById("calories-output").textContent = `Calories: ${totalCalories.toFixed(2)}`;
+    document.getElementById(
+      "carbohydrates-output"
+    ).textContent = `Carbohydrates: ${totalCarbohydrates.toFixed(2)}`;
+    document.getElementById(
+      "protein-output"
+    ).textContent = `Protein: ${totalProtein.toFixed(2)}`;
+    document.getElementById(
+      "fat-output"
+    ).textContent = `Fat: ${totalFat.toFixed(2)}`;
+    document.getElementById(
+      "sugar-output"
+    ).textContent = `Sugar: ${totalSugar.toFixed(2)}`;
+    document.getElementById(
+      "calories-output"
+    ).textContent = `Calories: ${totalCalories.toFixed(2)}`;
   })
-  .catch(error => {
-    console.log('Error fetching fruit data:', error);
+  .catch((error) => {
+    console.log("Error fetching fruit data:", error);
   });
 
 // Obtener la fecha y hora actual
-const currentDate = new Date();
-const orderDate = currentDate.toLocaleString();
-document.getElementById("order-date-output").textContent = `Order Date: ${orderDate}`;
+const currentDate1 = new Date();
+const orderDate = currentDate1.toLocaleString();
+document.getElementById(
+  "order-date-output"
+).textContent = `Order Date: ${orderDate}`;
 
 // Calcular la hora de recogida en 30 minutos
-const pickupDate = new Date(currentDate.getTime() + 30 * 60000); // Sumar 30 minutos en milisegundos
-const pickupTime = pickupDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+const pickupDate = new Date(currentDate1.getTime() + 30 * 60000); // Sumar 30 minutos en milisegundos
+const pickupTime = pickupDate.toLocaleTimeString([], {
+  hour: "2-digit",
+  minute: "2-digit",
+});
 
 // Mostrar la hora de recogida en la página de confirmación
-document.getElementById("pickup-time-output").textContent = `You can pickup your order at: ${pickupTime}`;
+document.getElementById(
+  "pickup-time-output"
+).textContent = `You can pickup your order at: ${pickupTime}`;
 
 function rate(stars) {
   const starElements = document.getElementsByClassName("star");

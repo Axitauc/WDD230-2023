@@ -173,14 +173,13 @@ footer p {
   padding-top: 22rem;
 }
 
-.contact-information-section h3 {
+#total-drinks-output {
   font-weight: 400;
-  font-style: italic;
 }
 
 .contact-information-section p {
   font-weight: 100;
-  line-height: 4px;
+  line-height: 16px;
 }
 
 /* Call To Action */
@@ -890,7 +889,8 @@ footer p {
   align-items: center;
   justify-content: center;
   background: #e44b3a;
-  margin-bottom: 5rem;
+  padding: 5rem;
+  margin: 2rem 0;
 }
 
 .container-form p {
@@ -947,10 +947,10 @@ footer p {
 }
 .form .column {
   display: flex;
-  column-gap: 15px;
 }
 .form .fruit-box {
   margin-top: 20px;
+  text-align: center;
 }
 .fruit-box h3 {
   color: #333;
@@ -966,8 +966,10 @@ footer p {
   line-height: 2rem;
 }
 .form .fruit {
-  column-gap: 5px;
+  padding: 1rem;
+  font-size: 0.8rem;
 }
+
 .fruit input {
   accent-color: #707070;
 }

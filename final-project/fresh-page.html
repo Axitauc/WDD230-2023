@@ -27,12 +27,13 @@
     <script src="./scripts/slider.js" defer></script>
     <script src="./scripts/weather-api.js" defer></script>
     <script src="./scripts/swiper-bundle.js" defer></script>
-    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper-bundle.min.js" defer></script>
     <script src="./scripts/fruit-list.js" defer></script>
+    <script src="./scripts/fruit-elections.js"></script>
     <script src="./scripts/fruits.js" defer></script>
     <script src="./scripts/confirmation.js" defer></script>
-    <script src="./scripts/smoothie-counter.js" defer></script>
-    <script src="./scripts/recuperar-contador.js"></script>
+    <script src="./scripts/fresh.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -70,8 +71,13 @@
     <main class="fresh-page-body">
       <section class="container-form">
         <h2>Smoothie Purchase</h2>
-        <form action="./confirmation-page.html" class="form" id="myForm">
-          <div class="input-box">
+        <form
+          id="order-form"
+          method="GET"
+          action="./confirmation-page.html"
+          class="form"
+        >
+          <div id="full-name" class="input-box">
             <label>Full Name</label>
             <input
               id="first-name-output"
@@ -100,44 +106,7 @@
           </div>
           <div class="fruit-box">
             <h3>Build your own smoothie. You can choose up to 3 options!</h3>
-            <div class="fruit-option">
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-apple" />
-                <label for="check-apple">Apple</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-grape" />
-                <label for="check-grape">Grape</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-kiwi" />
-                <label for="check-kiwi">Kiwi</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-mango" />
-                <label for="check-mango">Mango</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-orange" />
-                <label for="check-orange">Orange</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-peach" />
-                <label for="check-peach">Peach</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-pineapple" />
-                <label for="check-pineapple">Pineapple</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-strawberry" />
-                <label for="check-strawberry">Strawberry</label>
-              </div>
-              <div class="fruit">
-                <input type="checkbox" name="fruit" id="check-watermelon" />
-                <label for="check-watermelon">Watermelon</label>
-              </div>
-            </div>
+            <div class="fruit" id="checkbox-container"></div>
           </div>
           <div class="input-box address">
             <label>Special Instructions</label>
@@ -150,9 +119,7 @@
           </div>
           <p>Payment is received at the time of the pick up!</p>
           <input type="hidden" name="todaysdate" id="hiddendate" value="" />
-          <div class="form-button">
-            <input class="mysubmit" type="submit" name="go" value="Submit" />
-          </div>
+          <button type="submit">Submit</button>
         </form>
       </section>
     </main>
