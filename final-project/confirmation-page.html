@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="red-flavor" content="local-farm" />
+    <title>Red Velvet | Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/x-icon" href="./images/Home/Favicon.webp" />
+
+    <!-- Links to the CSS's files -->
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+
+    <!-- Links to the JS's files -->
+    <script src="./scripts/last-actualization.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/weather-api.js" defer></script>
+    <script src="./scripts/swiper-bundle.js" defer></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/fruit-list.js" defer></script>
+    <script src="./scripts/fruits.js" defer></script>
+    <script src="./scripts/confirmation.js" defer></script>
+    <script src="./scripts/fresh.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+      </div>
+      <input type="checkbox" id="nav-check" hidden />
+      <nav>
+        <div class="logo">
+          <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="./index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="./fresh-page.html">Fresh</a>
+          </li>
+          <li>
+            <a href="./about-us-page.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-check" class="hamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <main class="confirmation-main">
+      <div class="grid-container">
+        <section class="confirmation-section">
+          <div class="inside-sec-c">
+            <h1>Thank you for your order!</h1>
+            <p id="pickup-time-output"></p>
+            <h2>Personal information</h2>
+
+            <p id="first-name-output"></p>
+            <p id="email-output"></p>
+            <p id="phone-output"></p>
+            <h2>Order information</h2>
+
+            <p id="fruit1-output"></p>
+            <p id="fruit2-output"></p>
+            <p id="fruit3-output"></p>
+            <p id="special-instructions-output"></p>
+            <h2>Total Nutrients</h2>
+
+            <p id="carbohydrates-output"></p>
+            <p id="protein-output"></p>
+            <p id="fat-output"></p>
+            <p id="sugar-output"></p>
+            <p id="calories-output"></p>
+            <p id="order-date-output"></p>
+          </div>
+        </section>
+      </div>
+      <div class="grid-container">
+        <section class="more-inf-c">
+          <div class="leave-review">
+            <div class="vertical-line"></div>
+            <div class="inside-sec-c">
+              <h2>Leave a Review</h2>
+              <div class="rating-stars">
+                <span class="star" onclick="rate(1)">&#9733;</span>
+                <span class="star" onclick="rate(2)">&#9733;</span>
+                <span class="star" onclick="rate(3)">&#9733;</span>
+                <span class="star" onclick="rate(4)">&#9733;</span>
+                <span class="star" onclick="rate(5)">&#9733;</span>
+              </div>
+
+              <div>
+                <p>or</p>
+                <p>find us in our social Media</p>
+                <div class="socialMedia socialMedia-c">
+                  <a href="#"
+                    ><img src="./images/facebook1.png" alt="facebook logo"
+                  /></a>
+                  <a href="#">
+                    <img src="./images/instagram 1.png" alt="instagram logo"
+                  /></a>
+                  <a href="#"
+                    ><img src="./images/pinterest1.png" alt="pinterest logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <h3>Please</h3>
+            <p>If any problems contact: (555) 123-4567</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-content-width">
+        <div>
+          <p>
+            &copy; <span id="currentyear"></span> | Axa B. Uribe | Final Project
+            | Last Modification: <span id="lastUpdated"></span>
+          </p>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/"
+            ><img src="./images/Home/facebook-logo.png" alt="facebook-logo"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./images/Home/instagram-logo.jpeg" alt="instagram-logo"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="./images/Home/twittter-logo.jpg" alt="twitter-logo"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

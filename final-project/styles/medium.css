@@ -1,0 +1,168 @@
+@media only screen and (max-width: 1215px) {
+  header {
+    width: 90%;
+    padding: 0 2rem;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: -470px;
+    z-index: 999;
+    width: 300px;
+    height: 100%;
+    transition: 0.2s;
+    background-color: #fefefe;
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  nav .logo {
+    display: block;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+  }
+
+  #nav-check:checked ~ nav {
+    left: 0;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  nav ul li a {
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  body {
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  footer {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+
+  .fruits-list {
+    display: none;
+  }
+
+  .logo img {
+    width: 14rem;
+    padding-left: 1rem;
+  }
+
+  .call-to-action {
+    padding: 2rem 2.5rem 2rem 2.5rem;
+  }
+
+  .call-to-action p {
+    font-size: 1rem;
+  }
+
+  .cuadricula-style {
+    display: grid;
+    grid-template-areas:
+      "f f"
+      "c c"
+      "a t";
+  }
+  .contact-information-section {
+    padding: 4rem;
+  }
+  .order-number span {
+    font-size: 4rem;
+  }
+
+  .order-number p {
+    font-size: 0.6rem;
+  }
+  .smoothies-menu-section {
+    max-width: 800px;
+    padding: 4rem;
+  }
+
+  .section-title p {
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+
+  .smoothies-menu-section h2 {
+    font-size: 2rem;
+  }
+  .menus {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .menu-column {
+    width: 100%;
+  }
+
+  .date-container {
+    text-align: center;
+  }
+
+  .weather-forecast #weather-forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    line-height: 1rem;
+    flex-direction: column;
+  }
+  .current-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .place-container {
+    text-align: center;
+  }
+
+  .weather-card {
+    width: 25rem;
+    padding: 2.5rem;
+    line-height: 0.7rem;
+  }
+
+  .weather-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .place-card {
+    width: 450px;
+    height: 300px;
+  }
+
+  .places-section {
+    max-width: 1000px;
+  }
+
+  .container-form {
+    max-width: 550px;
+    padding: 2rem;
+  }
+
+  .grid-container {
+    max-width: 500px;
+  }
+}

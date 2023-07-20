@@ -1,0 +1,23 @@
+
+body {
+    display: grid;
+    grid-template-columns:250px 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 40px;
+}
+
+img
+{
+    grid-column: 1/2;
+}
+
+p
+{
+    grid-column: 2/3;
+}
+
+ul
+{
+    grid-column: 3/4;
+}
+

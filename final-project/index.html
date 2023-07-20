@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="red-flavor" content="local-farm" />
+    <title>Red Velvet | Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/x-icon" href="./images/Home/Favicon.webp" />
+
+    <!-- Links to the CSS's files -->
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Links to the JS's files -->
+    <script src="./scripts/last-actualization.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/weather-api.js" defer></script>
+    <script src="./scripts/swiper-bundle.js" defer></script>
+    <script src="./scripts/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/fruit-list.js" defer></script>
+    <script src="./scripts/fruits.js" defer></script>
+    <script src="./scripts/confirmation.js" defer></script>
+    <script src="./scripts/fresh.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+      </div>
+      <input type="checkbox" id="nav-check" hidden />
+      <nav>
+        <div class="logo">
+          <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="./index.html" class="active">Home</a>
+          </li>
+          <li>
+            <a href="./fresh-page.html">Fresh</a>
+          </li>
+          <li>
+            <a href="./about-us-page.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-check" class="hamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <main>
+      <div class="main-section-width">
+        <div class="cuadricula-style">
+          <!-- Contact Information -->
+          <div class="contact-information-section">
+            <h2>Red Flavor</h2>
+            <h3>
+              "Nature's bounty awaits, taste the sweetness at our fruit shop."
+            </h3>
+            <p>(213)-987-0945</p>
+            <p>redflavor.smoothies@gmail.com</p>
+            <p>
+              <a href="https://goo.gl/maps/zrpcFTUNKuUVgp6H8"
+                >123 Pine Street Riverside, CA 90210</a
+              >
+            </p>
+          </div>
+          <!-- Call to Act -->
+          <div class="call-to-action">
+            <p>
+              Unleash your creativity and craft your perfect personalized
+              smoothie blend!
+            </p>
+            <button><a href="./fresh-page.html">Order Now!</a></button>
+          </div>
+          <!-- Ordered Smoothies -->
+          <div class="order-number" class="information-card">
+            <span id="total-drinks-output">0</span>
+            <p>
+              Let's count!<br />
+              We are serving smiles.
+            </p>
+          </div>
+          <!-- Carrusel -->
+          <div class="fruits-list">
+            <div class="slider">
+              <div class="slides">
+                <!-- readio buttons start -->
+                <input type="radio" name="radio-button" id="radio1" />
+                <input type="radio" name="radio-button" id="radio2" />
+                <input type="radio" name="radio-button" id="radio3" />
+                <input type="radio" name="radio-button" id="radio4" />
+                <input type="radio" name="radio-button" id="radio5" />
+                <input type="radio" name="radio-button" id="radio6" />
+                <input type="radio" name="radio-button" id="radio7" />
+                <input type="radio" name="radio-button" id="radio8" />
+                <input type="radio" name="radio-button" id="radio9" />
+                <input type="radio" name="radio-button" id="radio10" />
+                <input type="radio" name="radio-button" id="radio11" />
+                <!-- readio buttons end -->
+                <!-- slide images start -->
+                <div class="slide first">
+                  <img
+                    src="./images/Home/Carrousel/strawberries-1.jpg"
+                    alt="straberries"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/apples-1.jpg"
+                    alt="apples"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/blueberries-1.jpg"
+                    alt="blueberries"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/grapes-1.jpg"
+                    alt="grapes"
+                  />
+                </div>
+                <div class="slide">
+                  <img src="./images/Home/Carrousel/kiwis-1.jpg" alt="kiwis" />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/mangos-1.jpg"
+                    alt="mangos"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/orange-1.jpg"
+                    alt="orange"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/peaches-1.jpg"
+                    alt="peaches"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/pecans-1.jpg"
+                    alt="pecans"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/pineapple-1.jpg"
+                    alt="pineapple"
+                  />
+                </div>
+                <div class="slide">
+                  <img
+                    src="./images/Home/Carrousel/watermelon-1.jpg"
+                    alt="watermelon"
+                  />
+                </div>
+                <!-- slide images end -->
+                <!-- automatic navigation start-->
+                <div class="navigation-auto">
+                  <div class="auto-buton1"></div>
+                  <div class="auto-buton2"></div>
+                  <div class="auto-buton3"></div>
+                  <div class="auto-buton4"></div>
+                  <div class="auto-buton5"></div>
+                  <div class="auto-buton6"></div>
+                  <div class="auto-buton7"></div>
+                  <div class="auto-buton8"></div>
+                  <div class="auto-buton9"></div>
+                  <div class="auto-buton10"></div>
+                  <div class="auto-buton11"></div>
+                </div>
+                <!-- automatic navigation end-->
+              </div>
+              <!-- manual navigation start-->
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-buton"></label>
+                <label for="radio2" class="manual-buton"></label>
+                <label for="radio3" class="manual-buton"></label>
+                <label for="radio4" class="manual-buton"></label>
+                <label for="radio5" class="manual-buton"></label>
+                <label for="radio6" class="manual-buton"></label>
+                <label for="radio7" class="manual-buton"></label>
+                <label for="radio8" class="manual-buton"></label>
+                <label for="radio9" class="manual-buton"></label>
+                <label for="radio10" class="manual-buton"></label>
+                <label for="radio11" class="manual-buton"></label>
+              </div>
+              <!-- manual navigation end-->
+            </div>
+          </div>
+        </div>
+        <!-- Division for the fruitlist -->
+        <div class="fruits-information-division">
+          <div class="slide-container swiper">
+            <h2>Check Our Products!</h2>
+            <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/apple-watercolor.png"
+                        alt="apple"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Apple</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/blueberry-watercolor.png"
+                        alt="blueberry"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Blueberry</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/grape-watercolor.png"
+                        alt="grape"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Grape</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/kiwi-watercolor.png"
+                        alt="kiwi"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Kiwi</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/mango-watercolor.png"
+                        alt="mango"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Mango</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/orange-watercolor.png"
+                        alt="orange"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Orange</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/peach-watercolor.png"
+                        alt="peach"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Peach</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="./images/Home/Fruits-icon/pineapple.png"
+                        alt="pineapple"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Pineapple</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="images/Home/Fruits-icon/strawberry-watercolor.png"
+                        alt="strawberry"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Strawberry</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="image-content">
+                    <span class="overlay"></span>
+                    <div class="card-image">
+                      <img
+                        src="images/Home/Fruits-icon/watermelon-watercolor.png"
+                        alt="watermelon"
+                        class="card-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <p class="description">Watermelon</p>
+                    <button class="button">View More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- Smoothies Menu -->
+        <div class="smoothies-menu-section">
+          <div class="section-title">
+            <h2>Our Menu</h2>
+            <p>
+              Discover a delightful menu of refreshing smoothies, blending
+              vibrant fruits, nutritious greens, and indulgent flavors to
+              satisfy every craving. Step right up and explore our tantalizing
+              smoothie menu!
+            </p>
+          </div>
+          <div class="menus">
+            <!--<div class="menu-column">
+              <h4>Pinks</h4>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/pink-smoothie-1.png"
+                  alt="pink-s-1"
+                />
+                <div class="menu-content">
+                  <h5>Berry Blast <span>$5.99</span></h5>
+                  <p>
+                    A refreshing blend of strawberries, blueberries,
+                    raspberries, yogurt, and honey.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/pink-smoothie-2.png"
+                  alt="pink-s-2"
+                />
+                <div class="menu-content">
+                  <h5>Tropical Paradise <span>$6.49</span></h5>
+                  <p>
+                    Enjoy the taste of the tropics with mango, pineapple,
+                    coconut milk, banana, and orange juice.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/pink-smoothie-3.png"
+                  alt="pink-s-3"
+                />
+                <div class="menu-content">
+                  <h5>Green Power<span>$6.99</span></h5>
+                  <p>
+                    Packed with nutrients, this smoothie contains spinach, kale,
+                    banana, almond milk, and a touch of honey.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/pink-smoothie-4.png"
+                  alt="pink-s-4"
+                />
+                <div class="menu-content">
+                  <h5>Chocolate Delight<span>$6.49</span></h5>
+                  <p>
+                    Indulge in this creamy blend of chocolate protein powder,
+                    almond butter, banana, and almond milk.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <div class="menu-column">
+              <h4>Blues</h4>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/blue-smoothie-1.png"
+                  alt="blue-s-1"
+                />
+                <div class="menu-content">
+                  <h5>Sunrise Splash<span>$5.99</span></h5>
+                  <p>
+                    Energize your day with a vibrant mix of oranges, carrots,
+                    ginger, and apple juice.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/blue-smoothie-2.png"
+                  alt="blue-s-2"
+                />
+                <div class="menu-content">
+                  <h5>Peanut Butter Bliss<span>$6.49</span></h5>
+                  <p>
+                    A classic combination of peanut butter, banana, almond milk,
+                    and a drizzle of honey.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/blue-smoothie-3.png"
+                  alt="blue-s-3"
+                />
+                <div class="menu-content">
+                  <h5>Berry Protein Boost <span>$6.99</span></h5>
+                  <p>
+                    A protein-packed smoothie featuring mixed berries, Greek
+                    yogurt, almond milk, and chia seeds.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/blue-smoothie-4.png"
+                  alt="blue-s-4"
+                />
+                <div class="menu-content">
+                  <h5>Mocha Madness<span>$6.49</span></h5>
+                  <p>
+                    Get your coffee fix with this blend of cold brew coffee,
+                    chocolate protein powder, almond milk, and a hint of
+                    vanilla.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="menu-column">
+              <h4>Greens</h4>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/green-smoothie-1.png"
+                  alt="green-s-1"
+                />
+                <div class="menu-content">
+                  <h5>Piña Colada Twist<span>$5.99</span></h5>
+                  <p>
+                    Transport yourself to a tropical getaway with pineapple,
+                    coconut milk, banana, and a splash of lime.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/green-smoothie-2.png"
+                  alt="gree-s-2"
+                />
+                <div class="menu-content">
+                  <h5>Immunity Booster <span>$6.49</span></h5>
+                  <p>
+                    Support your immune system with a mix of orange, lemon,
+                    ginger, turmeric, and a touch of honey.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/green-smoothie-3.png"
+                  alt="green-s-3"
+                />
+                <div class="menu-content">
+                  <h5>Minty Fresh<span>$6.49</span></h5>
+                  <p>
+                    Cool down with this invigorating blend of fresh mint leaves,
+                    cucumber, pineapple, spinach, and coconut water.
+                  </p>
+                </div>
+              </div>
+              <div class="single-menu">
+                <img
+                  src="./images/Home/Smoothies-images/green-smoothie-4.png"
+                  alt="green-s-4"
+                />
+                <div class="menu-content">
+                  <h5>Citrus Burst<span>$5.99</span></h5>
+                  <p>
+                    Experience a burst of tangy flavors with a combination of
+                    orange, grapefruit, lemon, lime, and a touch of agave syrup.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Weather Division -->
+        <div class="touristic">
+          <h2>Let's tour California!</h2>
+          <div class="weather-division">
+            <div class="weather-container" id="weather-container"></div>
+            <div class="container">
+              <div class="current-info">
+                <div class="date-container">
+                  <div class="time" id="time">
+                    <span id="am-pm"></span>
+                  </div>
+                  <div class="date" id="date">Monday, 25 May</div>
+                </div>
+                <div class="place-container">
+                  <div class="time-zone" id="time-zone">AMERICA/CALIFORNIA</div>
+                  <div id="country" class="country">US</div>
+                </div>
+              </div>
+            </div>
+            <div class="future-forecast">
+              <div class="weather-forecast" id="weather-forecast">
+                <div id="weather-forecast-item"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Places Division -->
+          <div class="places-section">
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/lago-tahue.jpeg"
+                alt="lago-tahue"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Tahue Lake</h1>
+                <p class="card-info">
+                  Escape to the breathtaking beauty of Tahue Lake in California.
+                  Serene waters, majestic mountains, and tranquility await.
+                  Come, experience nature's masterpiece firsthand.
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/disneland.jpeg"
+                alt="disneyland"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Disneyland</h1>
+                <p class="card-info">
+                  Step into a world of magic and enchantment at Disneyland
+                  California. Immerse yourself in thrilling rides, beloved
+                  characters, and unforgettable memories. Let the adventure
+                  begin!
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/golden-bridge.jpeg"
+                alt="golden-bridge"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Golden Bridge</h1>
+                <p class="card-info">
+                  Come marvel at the iconic Golden Bridge in California.
+                  Suspended in mid-air, it offers breathtaking views of San
+                  Francisco Bay and captures the essence of architectural
+                  wonder.
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/palm-springs.jpeg"
+                alt="palm-springs"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Palm Springs</h1>
+                <p class="card-info">
+                  Escape to the sun-drenched oasis of Palm Springs, California.
+                  Relax in luxurious resorts, explore vibrant downtown, and bask
+                  in the desert beauty surrounded by majestic palm trees.
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/death-valley.jpeg"
+                alt="death-valley"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Death Valley</h1>
+                <p class="card-info">
+                  Experience the captivating extremes of Death Valley,
+                  California. From vast salt flats to towering sand dunes, this
+                  unique desert landscape beckons with its otherworldly beauty
+                  and unforgettable adventures.
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/santa-catalina.webp"
+                alt="santa-catalina"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Santa Catalina</h1>
+                <p class="card-info">
+                  Discover the captivating paradise of Santa Catalina,
+                  California. With crystal-clear waters, breathtaking coastal
+                  views, and a charming island atmosphere, it's a coastal escape
+                  you won't want to miss.
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/universal-studios.jpeg"
+                alt="universal-studios"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Universal Studios</h1>
+                <p class="card-info">
+                  Step into the magic of Universal Studios in California.
+                  Experience thrilling rides, immerse yourself in movie sets,
+                  and create lifelong memories in this ultimate entertainment
+                  destination
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/los-angeles.webp"
+                alt="los-angeles"
+              />
+              <div class="card-body">
+                <h1 class="card-title">Los Angeles</h1>
+                <p class="card-info">
+                  Experience the coastal charm of San Diego, California.
+                  Discover stunning beaches, world-class attractions, and a
+                  laid-back atmosphere that captures the essence of Southern
+                  California.
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+            <div class="place-card">
+              <img
+                class="places-card-img"
+                src="./images/Home/Places-Images/san-diego.webp"
+                alt="san-diego"
+              />
+              <div class="card-body">
+                <h1 class="card-title">San Diego</h1>
+                <p class="card-info">
+                  Experience the coastal charm of San Diego, California.
+                  Discover stunning beaches, world-class attractions, and a
+                  laid-back atmosphere that captures the essence of Southern
+                  California.
+                </p>
+                <button class="place-card-btn">Book Tour!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-content-width">
+        <div>
+          <p>
+            &copy; <span id="currentyear"></span> | Axa B. Uribe | Final Project
+            | Last Modification: <span id="lastUpdated"></span>
+          </p>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/"
+            ><img src="./images/Home/facebook-logo.png" alt="facebook-logo"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./images/Home/instagram-logo.jpeg" alt="instagram-logo"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="./images/Home/twittter-logo.jpg" alt="twitter-logo"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="red-flavor" content="local-farm" />
+    <title>Red Velvet | Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/x-icon" href="./images/Home/Favicon.webp" />
+
+    <!-- Links to the CSS's files -->
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+
+    <!-- Links to the JS's files -->
+    <script src="./scripts/last-actualization.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/weather-api.js" defer></script>
+    <script src="./scripts/swiper-bundle.js" defer></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/fruit-list.js" defer></script>
+    <script src="./scripts/fruits.js" defer></script>
+    <script src="./scripts/confirmation.js" defer></script>
+    <script src="./scripts/fresh.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+      </div>
+      <input type="checkbox" id="nav-check" hidden />
+      <nav>
+        <div class="logo">
+          <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./fresh-page.html">Fresh</a>
+          </li>
+          <li>
+            <a href="./about-us-page.html" class="active">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-check" class="hamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <main>
+      <div class="story">
+        <div>
+          <img src="./images/About Us/emily-painting.jpeg" alt="emily" />
+        </div>
+        <div class="about-us-text">
+          <h2>Wendy Velvet</h2>
+          <p class="first-letter">
+            In the sun-kissed landscape of California, an ambitious entrepreneur
+            named Wendy Velvet cultivated a vision that would fuse her love for
+            gardening and passion for promoting healthy living. With meticulous
+            planning and unwavering determination, she established a
+            garden-to-glass smoothie shop named Bloom & Blend. Partnering with
+            local farmers, she sourced organic produce to create a diverse menu
+            of vibrant smoothies. Through strategic marketing, community
+            engagement, and a commitment to sustainability, Bloom & Blend
+            flourished, becoming a beloved destination for health-conscious
+            individuals seeking nourishment and inspiration. Emily's garden
+            oasis not only yielded fresh ingredients but also grew a thriving
+            business that symbolized vitality and wellness in California.
+            Nestled amidst the picturesque backdrop of California's bountiful
+            landscapes, Bloom & Blend blossomed into a haven of flavor and
+            well-being. The garden, meticulously tended by a skilled team,
+            boasted an abundance of nutrient-rich kale, succulent berries, and
+            fragrant herbs. Emily's vintage smoothie bar, with its inviting
+            ambiance, became a gathering spot for health enthusiasts and curious
+            epicureans. As the word spread, Bloom & Blend's commitment to
+            community, sustainability, and the vibrant flavors of its
+            garden-fresh smoothies made it a beloved local icon, an oasis where
+            nature's gifts merged seamlessly with the art of blending.
+          </p>
+        </div>
+      </div>
+      <div class="biblio">
+        <div class="about-us-resources">
+          <h2>Follow Us in Social Media!</h2>
+          <div class="social-media-contact">
+            <div>
+              <img src="./images/Home/facebook-logo.png" alt="fb-icon" />
+              <p>Facebook</p>
+            </div>
+            <div>
+              <img src="./images/Home/twittter-logo.jpg" alt="twitter-icon" />
+              <p>Twitter</p>
+            </div>
+            <div>
+              <img src="./images/Home/instagram-logo.jpeg" alt="ig-icon" />
+              <p>Instagram</p>
+            </div>
+            <div>
+              <img
+                src="./images/About Us/linkedin-icon.png"
+                alt="linkedin-icon"
+              />
+              <p>LinkedIn</p>
+            </div>
+            <div>
+              <img
+                src="./images/About Us/youtube-icon.webp"
+                alt="youtube-icon"
+              />
+              <p>YouTube</p>
+            </div>
+          </div>
+          <div class="area-2-contact-page">
+            <div class="mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6502595.146296284!2d-119.306607!3d37.2691675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia!5e0!3m2!1sen!2sus!4v1689721530566!5m2!1sen!2sus"
+                width="500"
+                height="500"
+                style="border-radius: 1rem"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="resources">
+          <h2>Resources</h2>
+          <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-content-width">
+        <div>
+          <p>
+            &copy; <span id="currentyear"></span> | Axa B. Uribe | Final Project
+            | Last Modification: <span id="lastUpdated"></span>
+          </p>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/"
+            ><img src="./images/Home/facebook-logo.png" alt="facebook-logo"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./images/Home/instagram-logo.jpeg" alt="instagram-logo"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="./images/Home/twittter-logo.jpg" alt="twitter-logo"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

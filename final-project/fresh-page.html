@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="red-flavor" content="local-farm" />
+    <title>Red Velvet | Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!-- Favicon Configuration -->
+    <link rel="icon" type="image/x-icon" href="./images/Home/Favicon.webp" />
+
+    <!-- Links to the CSS's files -->
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css" />
+
+    <!-- Links to the JS's files -->
+    <script src="./scripts/last-actualization.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/weather-api.js" defer></script>
+    <script src="./scripts/swiper-bundle.js" defer></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/fruit-list.js" defer></script>
+    <script src="./scripts/fruits.js" defer></script>
+    <script src="./scripts/confirmation.js" defer></script>
+    <script src="./scripts/fresh.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+      </div>
+      <input type="checkbox" id="nav-check" hidden />
+      <nav>
+        <div class="logo">
+          <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+        </div>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./fresh-page.html" class="active">Fresh</a>
+          </li>
+          <li>
+            <a href="./about-us-page.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+      <label for="nav-check" class="hamburguer">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+    </header>
+    <main class="fresh-page-body">
+      <section class="container-form">
+        <h2>Smoothie Purchase</h2>
+        <form action="./confirmation-page.html" class="form">
+          <div class="input-box">
+            <label>Full Name</label>
+            <input
+              id="first-name-output"
+              placeholder="Enter full name"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label>Email Address</label>
+            <input
+              id="email-output"
+              placeholder="Enter email address"
+              required
+            />
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input
+                id="phone-output"
+                type="number"
+                placeholder="Enter phone number"
+                required
+              />
+            </div>
+          </div>
+          <div class="fruit-box">
+            <h3>Build your own smoothie. You can choose up to 3 options!</h3>
+            <div class="fruit-option">
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-apple">Apple</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-grape">Grape</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-kiwi">Kiwi</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-mango">Mango</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-orange">Orange</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-peach">Peach</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-pineapple">Pineapple</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-strawberry">Strawberry</label>
+              </div>
+              <div class="fruit">
+                <input type="checkbox" name="fruit" />
+                <label for="check-watermelon">Watermelon</label>
+              </div>
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Special Instructions</label>
+            <input
+              type="text"
+              id="special-instructions-output"
+              placeholder="Let us know your preferences!"
+              required
+            />
+          </div>
+          <p>Payment is received at the time of the pick up!</p>
+          <input type="hidden" name="todaysdate" id="hiddendate" value="" />
+          <button>
+            <input class="mysubmit" type="submit" name="go" value="Submit" />
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-content-width">
+        <div>
+          <p>
+            &copy; <span id="currentyear"></span> | Axa B. Uribe | Final Project
+            | Last Modification: <span id="lastUpdated"></span>
+          </p>
+        </div>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/"
+            ><img src="./images/Home/facebook-logo.png" alt="facebook-logo"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="./images/Home/instagram-logo.jpeg" alt="instagram-logo"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="./images/Home/twittter-logo.jpg" alt="twitter-logo"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
