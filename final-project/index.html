@@ -38,19 +38,23 @@
     <script src="./scripts/fruit-list.js" defer></script>
     <script src="./scripts/fruits.js" defer></script>
     <script src="./scripts/confirmation.js" defer></script>
-    <script src="./scripts/fresh.js" defer></script>
-    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/smoothie-counter.js" defer></script>
+    <script src="./scripts/recuperar-contador.js"></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="logo">
-        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" loading="lazy" />
       </div>
       <input type="checkbox" id="nav-check" hidden />
       <nav>
         <div class="logo">
-          <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+          <img
+            src="./images/Home/Nav-Logo.webp"
+            alt="nav-logo"
+            loading="lazy"
+          />
         </div>
         <ul>
           <li>
@@ -64,7 +68,7 @@
           </li>
         </ul>
       </nav>
-      <label for="nav-check" class="hamburguer">
+      <label select="option" for="nav-check" class="hamburguer">
         <div></div>
         <div></div>
         <div></div>
@@ -93,11 +97,11 @@
               Unleash your creativity and craft your perfect personalized
               smoothie blend!
             </p>
-            <button><a href="./fresh-page.html">Order Now!</a></button>
+            <div><a href="./fresh-page.html">Order Now!</a></div>
           </div>
           <!-- Ordered Smoothies -->
-          <div class="order-number" class="information-card">
-            <span id="total-drinks-output">0</span>
+          <div class="order-number information-card">
+            <span id="contador-placeholder">0</span>
             <p>
               Let's count!<br />
               We are serving smiles.
@@ -125,63 +129,77 @@
                   <img
                     src="./images/Home/Carrousel/strawberries-1.jpg"
                     alt="straberries"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/apples-1.jpg"
                     alt="apples"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/blueberries-1.jpg"
                     alt="blueberries"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/grapes-1.jpg"
                     alt="grapes"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
-                  <img src="./images/Home/Carrousel/kiwis-1.jpg" alt="kiwis" />
+                  <img
+                    src="./images/Home/Carrousel/kiwis-1.jpg"
+                    alt="kiwis"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/mangos-1.jpg"
                     alt="mangos"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/orange-1.jpg"
                     alt="orange"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/peaches-1.jpg"
                     alt="peaches"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/pecans-1.jpg"
                     alt="pecans"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/pineapple-1.jpg"
                     alt="pineapple"
+                    loading="lazy"
                   />
                 </div>
                 <div class="slide">
                   <img
                     src="./images/Home/Carrousel/watermelon-1.jpg"
                     alt="watermelon"
+                    loading="lazy"
                   />
                 </div>
                 <!-- slide images end -->
@@ -233,6 +251,7 @@
                         src="./images/Home/Fruits-icon/apple-watercolor.png"
                         alt="apple"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -249,6 +268,7 @@
                         src="./images/Home/Fruits-icon/blueberry-watercolor.png"
                         alt="blueberry"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -265,6 +285,7 @@
                         src="./images/Home/Fruits-icon/grape-watercolor.png"
                         alt="grape"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -281,6 +302,7 @@
                         src="./images/Home/Fruits-icon/kiwi-watercolor.png"
                         alt="kiwi"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -297,6 +319,7 @@
                         src="./images/Home/Fruits-icon/mango-watercolor.png"
                         alt="mango"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -313,6 +336,7 @@
                         src="./images/Home/Fruits-icon/orange-watercolor.png"
                         alt="orange"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -329,6 +353,7 @@
                         src="./images/Home/Fruits-icon/peach-watercolor.png"
                         alt="peach"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -345,6 +370,7 @@
                         src="./images/Home/Fruits-icon/pineapple.png"
                         alt="pineapple"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -361,6 +387,7 @@
                         src="images/Home/Fruits-icon/strawberry-watercolor.png"
                         alt="strawberry"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -377,6 +404,7 @@
                         src="images/Home/Fruits-icon/watermelon-watercolor.png"
                         alt="watermelon"
                         class="card-img"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -465,6 +493,7 @@
                 <img
                   src="./images/Home/Smoothies-images/blue-smoothie-1.png"
                   alt="blue-s-1"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Sunrise Splash<span>$5.99</span></h5>
@@ -478,6 +507,7 @@
                 <img
                   src="./images/Home/Smoothies-images/blue-smoothie-2.png"
                   alt="blue-s-2"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Peanut Butter Bliss<span>$6.49</span></h5>
@@ -491,6 +521,7 @@
                 <img
                   src="./images/Home/Smoothies-images/blue-smoothie-3.png"
                   alt="blue-s-3"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Berry Protein Boost <span>$6.99</span></h5>
@@ -504,6 +535,7 @@
                 <img
                   src="./images/Home/Smoothies-images/blue-smoothie-4.png"
                   alt="blue-s-4"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Mocha Madness<span>$6.49</span></h5>
@@ -521,6 +553,7 @@
                 <img
                   src="./images/Home/Smoothies-images/green-smoothie-1.png"
                   alt="green-s-1"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Piña Colada Twist<span>$5.99</span></h5>
@@ -534,6 +567,7 @@
                 <img
                   src="./images/Home/Smoothies-images/green-smoothie-2.png"
                   alt="gree-s-2"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Immunity Booster <span>$6.49</span></h5>
@@ -547,6 +581,7 @@
                 <img
                   src="./images/Home/Smoothies-images/green-smoothie-3.png"
                   alt="green-s-3"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Minty Fresh<span>$6.49</span></h5>
@@ -560,6 +595,7 @@
                 <img
                   src="./images/Home/Smoothies-images/green-smoothie-4.png"
                   alt="green-s-4"
+                  loading="lazy"
                 />
                 <div class="menu-content">
                   <h5>Citrus Burst<span>$5.99</span></h5>
@@ -604,6 +640,7 @@
                 class="places-card-img"
                 src="./images/Home/Places-Images/lago-tahue.jpeg"
                 alt="lago-tahue"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Tahue Lake</h1>
@@ -620,6 +657,7 @@
                 class="places-card-img"
                 src="./images/Home/Places-Images/disneland.jpeg"
                 alt="disneyland"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Disneyland</h1>
@@ -637,6 +675,7 @@
                 class="places-card-img"
                 src="./images/Home/Places-Images/golden-bridge.jpeg"
                 alt="golden-bridge"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Golden Bridge</h1>
@@ -654,6 +693,7 @@
                 class="places-card-img"
                 src="./images/Home/Places-Images/palm-springs.jpeg"
                 alt="palm-springs"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Palm Springs</h1>
@@ -670,6 +710,7 @@
                 class="places-card-img"
                 src="./images/Home/Places-Images/death-valley.jpeg"
                 alt="death-valley"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Death Valley</h1>
@@ -685,8 +726,9 @@
             <div class="place-card">
               <img
                 class="places-card-img"
-                src="./images/Home/Places-Images/santa-catalina.webp"
+                src="./images/Home/Places-Images/santa-catalina.jpg"
                 alt="santa-catalina"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Santa Catalina</h1>
@@ -704,6 +746,7 @@
                 class="places-card-img"
                 src="./images/Home/Places-Images/universal-studios.jpeg"
                 alt="universal-studios"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Universal Studios</h1>
@@ -719,8 +762,9 @@
             <div class="place-card">
               <img
                 class="places-card-img"
-                src="./images/Home/Places-Images/los-angeles.webp"
+                src="./images/Home/Places-Images/los-angeles.jpg"
                 alt="los-angeles"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">Los Angeles</h1>
@@ -738,6 +782,7 @@
                 class="places-card-img"
                 src="./images/Home/Places-Images/san-diego.webp"
                 alt="san-diego"
+                loading="lazy"
               />
               <div class="card-body">
                 <h1 class="card-title">San Diego</h1>
@@ -764,13 +809,22 @@
         </div>
         <div class="redes-sociales">
           <a href="https://www.facebook.com/"
-            ><img src="./images/Home/facebook-logo.png" alt="facebook-logo"
+            ><img
+              src="./images/Home/facebook-logo.png"
+              alt="facebook-logo"
+              loading="lazy"
           /></a>
           <a href="https://www.instagram.com/"
-            ><img src="./images/Home/instagram-logo.jpeg" alt="instagram-logo"
+            ><img
+              src="./images/Home/instagram-logo.jpeg"
+              alt="instagram-logo"
+              loading="lazy"
           /></a>
           <a href="https://twitter.com/"
-            ><img src="./images/Home/twittter-logo.jpg" alt="twitter-logo"
+            ><img
+              src="./images/Home/twittter-logo.jpg"
+              alt="twitter-logo"
+              loading="lazy"
           /></a>
         </div>
       </section>

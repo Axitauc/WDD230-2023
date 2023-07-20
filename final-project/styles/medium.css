@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1215px) {
+@media only screen and (max-width: 1200px) {
   header {
     width: 90%;
     padding: 0 2rem;
@@ -80,6 +80,8 @@
       "f f"
       "c c"
       "a t";
+    max-width: 900px;
+    margin: 4rem;
   }
   .contact-information-section {
     padding: 4rem;
@@ -92,7 +94,8 @@
     font-size: 0.6rem;
   }
   .smoothies-menu-section {
-    max-width: 800px;
+    max-width: 1000px;
+    width: 100%;
     padding: 4rem;
   }
 
@@ -163,6 +166,73 @@
   }
 
   .grid-container {
-    max-width: 500px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .confirmation-section {
+    flex-direction: column;
+  }
+
+  .confirmation-main {
+    padding: 2.5rem 2rem;
+    margin: 2rem 0;
+  }
+
+  .inside-sec-p {
+    line-height: 0.5rem;
+  }
+
+  .footer-content-width p {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    margin: auto;
+  }
+
+  .redes-sociales img {
+    width: 1.7rem;
+  }
+
+  .story {
+    flex-direction: column;
+    padding: 0rem 2rem 2rem 2rem;
+    margin: 3rem;
+  }
+
+  .story img {
+    width: 600px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .story p {
+    padding: 0;
+    margin: 0;
+  }
+
+  .biblio {
+    flex-direction: column;
+    margin: 3rem;
+  }
+
+  .resources-division {
+    padding: 2rem;
+  }
+
+  .social-media-contact h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-text {
+    padding: 2rem;
+  }
+
+  .resources {
+    display: flex;
+    justify-content: center;
   }
 }

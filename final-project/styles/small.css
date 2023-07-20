@@ -12,17 +12,23 @@
       "c"
       "a"
       "t";
+    max-width: 580px;
+    width: 100%;
+    margin: auto;
   }
 
   .places-section {
     display: flex;
     flex-direction: column;
-    margin: 3.5rem;
   }
 
   .smoothies-menu-section {
-    max-width: 700px;
+    max-width: 650px;
     width: 100%;
+  }
+
+  .contact-information-section {
+    padding: 2rem;
   }
 
   .container-form {
@@ -38,9 +44,103 @@
     padding: 2rem;
   }
 
-  footer {
-    width: 90%;
+  .menus {
+    padding: 3rem;
+  }
+
+  .touristic h2 {
+    font-size: 2rem;
+  }
+
+  .fruits-information-division h2 {
+    font-size: 2rem;
+  }
+
+  .date-container .time {
+    font-size: 3rem;
+  }
+
+  .touristic .container {
+    padding: 0;
+  }
+
+  .date-container .date {
+    font-size: 1.5rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+
+  .place-container .time-zone {
+    font-size: 1rem;
+  }
+
+  .place-container .country {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .footer-content-width p {
+    font-size: 0.5rem;
+  }
+
+  .footer {
     margin: auto;
-    padding-bottom: 2rem;
+  }
+  .story {
+    padding: 1.2rem;
+    line-height: 0.4rem;
+    padding: 0;
+  }
+
+  .redes-sociales img {
+    width: 1.2rem;
+  }
+
+  .story img {
+    width: 300px;
+  }
+
+  .story h2 {
+    font-size: 2rem;
+  }
+
+  .weather-division {
+    max-width: 650px;
+    width: 100%;
+  }
+
+  .weather-card {
+    width: 20rem;
+  }
+
+  .place-card {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .story p {
+    font-size: 0.7rem;
+  }
+
+  .about-us-resources {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .resources {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .menu-content h5 {
+    font-size: 0.7rem;
+  }
+
+  .single-menu p {
+    font-size: 0.6rem;
   }
 }

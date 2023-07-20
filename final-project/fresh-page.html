@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="red-flavor" content="local-farm" />
-    <title>Red Velvet | Home Page</title>
+    <title>Red Velvet | Fresh Page</title>
 
     <link
       rel="stylesheet"
@@ -31,19 +31,23 @@
     <script src="./scripts/fruit-list.js" defer></script>
     <script src="./scripts/fruits.js" defer></script>
     <script src="./scripts/confirmation.js" defer></script>
-    <script src="./scripts/fresh.js" defer></script>
-    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/smoothie-counter.js" defer></script>
+    <script src="./scripts/recuperar-contador.js"></script>
   </head>
   <body>
     <!-- Header -->
     <header>
       <div class="logo">
-        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+        <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" loading="lazy" />
       </div>
       <input type="checkbox" id="nav-check" hidden />
       <nav>
         <div class="logo">
-          <img src="./images/Home/Nav-Logo.webp" alt="nav-logo" />
+          <img
+            src="./images/Home/Nav-Logo.webp"
+            alt="nav-logo"
+            loading="lazy"
+          />
         </div>
         <ul>
           <li>
@@ -66,7 +70,7 @@
     <main class="fresh-page-body">
       <section class="container-form">
         <h2>Smoothie Purchase</h2>
-        <form action="./confirmation-page.html" class="form">
+        <form action="./confirmation-page.html" class="form" id="myForm">
           <div class="input-box">
             <label>Full Name</label>
             <input
@@ -98,39 +102,39 @@
             <h3>Build your own smoothie. You can choose up to 3 options!</h3>
             <div class="fruit-option">
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-apple" />
                 <label for="check-apple">Apple</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-grape" />
                 <label for="check-grape">Grape</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-kiwi" />
                 <label for="check-kiwi">Kiwi</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-mango" />
                 <label for="check-mango">Mango</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-orange" />
                 <label for="check-orange">Orange</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-peach" />
                 <label for="check-peach">Peach</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-pineapple" />
                 <label for="check-pineapple">Pineapple</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-strawberry" />
                 <label for="check-strawberry">Strawberry</label>
               </div>
               <div class="fruit">
-                <input type="checkbox" name="fruit" />
+                <input type="checkbox" name="fruit" id="check-watermelon" />
                 <label for="check-watermelon">Watermelon</label>
               </div>
             </div>
@@ -146,9 +150,9 @@
           </div>
           <p>Payment is received at the time of the pick up!</p>
           <input type="hidden" name="todaysdate" id="hiddendate" value="" />
-          <button>
+          <div class="form-button">
             <input class="mysubmit" type="submit" name="go" value="Submit" />
-          </button>
+          </div>
         </form>
       </section>
     </main>
@@ -162,13 +166,22 @@
         </div>
         <div class="redes-sociales">
           <a href="https://www.facebook.com/"
-            ><img src="./images/Home/facebook-logo.png" alt="facebook-logo"
+            ><img
+              src="./images/Home/facebook-logo.png"
+              alt="facebook-logo"
+              loading="lazy"
           /></a>
           <a href="https://www.instagram.com/"
-            ><img src="./images/Home/instagram-logo.jpeg" alt="instagram-logo"
+            ><img
+              src="./images/Home/instagram-logo.jpeg"
+              alt="instagram-logo"
+              loading="lazy"
           /></a>
           <a href="https://twitter.com/"
-            ><img src="./images/Home/twittter-logo.jpg" alt="twitter-logo"
+            ><img
+              src="./images/Home/twittter-logo.jpg"
+              alt="twitter-logo"
+              loading="lazy"
           /></a>
         </div>
       </section>
