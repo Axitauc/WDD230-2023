@@ -23,10 +23,6 @@
 
     <!-- Links to the JS's files -->
     <script src="./scripts/last-actualization.js" defer></script>
-    <script src="./scripts/slider.js" defer></script>
-    <script src="./scripts/weather-api.js" defer></script>
-    <script src="./scripts/swiper-bundle.js" defer></script>
-    <script src="./scripts/swiper-bundle.min.js" defer></script>
     <script src="./scripts/fruit-list.js" defer></script>
     <script src="./scripts/fruit-elections.js"></script>
     <script src="./scripts/fruits.js" defer></script>
@@ -68,86 +64,57 @@
       </label>
     </header>
     <main class="confirmation-main">
-      <!-- Agrega un párrafo donde se mostrarán los datos del formulario -->
-      <p id="formSummary"></p>
-      <div class="confirmation-section">
-        <section class="grid-container">
+      <div class="grid-container">
+        <section class="confirmation-section">
           <div class="inside-sec-c">
             <h1>Thank you for your order!</h1>
             <p id="pickup-time-output"></p>
             <h2>Personal information</h2>
-            <div class="thank-you">
-              <p id="first-name-output"></p>
-              <p id="email-output"></p>
-              <p id="phone-output"></p>
-            </div>
-          </div>
-        </section>
-        <section class="grid-container">
-          <div class="inside-sec-c">
+            <hr>
+            <p id="first-name-output"></p>
+            <p id="email-output"></p>
+            <p id="phone-output"></p>
             <h2>Order information</h2>
-            <div class="other-info-confirmation">
-              <p id="fruit1-output"></p>
-              <p id="fruit2-output"></p>
-              <p id="fruit3-output"></p>
-              <p id="special-instructions-output"></p>
-            </div>
+            <hr>
+            <p id="fruit1-output"></p>
+            <p id="fruit2-output"></p>
+            <p id="fruit3-output"></p>
+            <p id="special-instructions-output"></p>
             <h2>Total Nutrients</h2>
-            <div class="total-nutrientes">
-              <p id="carbohydrates-output"></p>
-              <p id="protein-output"></p>
-              <p id="fat-output"></p>
-              <p id="sugar-output"></p>
-              <p id="calories-output"></p>
-              <p id="order-date-output"></p>
-            </div>
+            <hr>
+            <p id="carbohydrates-output"></p>
+            <p id="protein-output"></p>
+            <p id="fat-output"></p>
+            <p id="sugar-output"></p>
+            <p id="calories-output"></p>
+            <p id="order-date-output"></p>
           </div>
         </section>
-        <div class="grid-container">
-          <section class="more-inf-c">
-            <div class="leave-review">
-              <div class="vertical-line"></div>
-              <div class="inside-sec-c">
-                <h2>Leave a Review</h2>
-                <div class="rating-stars">
-                  <span class="star" onclick="rate(1)">&#9733;</span>
-                  <span class="star" onclick="rate(2)">&#9733;</span>
-                  <span class="star" onclick="rate(3)">&#9733;</span>
-                  <span class="star" onclick="rate(4)">&#9733;</span>
-                  <span class="star" onclick="rate(5)">&#9733;</span>
-                </div>
-
-                <div class="socialMedia">
-                  <p>Find us in our social Media</p>
-                  <div class="socialMedia-c">
-                    <a href="https://www.instagram.com/"
-                      ><img
-                        src="./images/Home/instagram-logo.jpeg"
-                        alt="ig-logo"
-                        loading="lazy"
-                    /></a>
-                    <a href="https://www.facebook.com">
-                      <img
-                        src="./images/Home/facebook-logo.png"
-                        alt="fb-logo"
-                        loading="lazy"
-                    /></a>
-                    <a href="https://twitter.com"
-                      ><img
-                        src="./images/Home/twittter-logo.jpg"
-                        alt="twitter-logo"
-                        loading="lazy"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-
-              <h3>Please</h3>
-              <p>If any problems contact: (555) 123-4567</p>
+        <section class="more-inf-c">
+          <div class="leave-review">
+            <div class="vertical-line"></div>
+            <div class="inside-sec-c">
+            <h2>Leave a Review</h2>
+            <div class="rating-stars">
+              <span class="star" onclick="rate(1)">&#9733;</span>
+              <span class="star" onclick="rate(2)">&#9733;</span>
+              <span class="star" onclick="rate(3)">&#9733;</span>
+              <span class="star" onclick="rate(4)">&#9733;</span>
+              <span class="star" onclick="rate(5)">&#9733;</span>
             </div>
-          </section>
-        </div>
-      </div>
+            <div>
+              <p>or</p>
+              <p>find us in our social Media</p>
+              <div class = "socialMedia socialMedia-c">
+                <a href="#"><img src="./images/facebook1.png" alt="facebook logo"></a>
+                <a href="#"> <img src="./images/instagram 1.png" alt="instagram logo"></a>
+                <a href="#"><img src="./images/pinterest1.png" alt="pinterest logo"></a>  
+            </div>
+            </div>
+          </div>
+          <h3>Please</h3>
+          <p>If any problems contact: (205) 890-4260</p>
+        </section>
     </main>
     <footer>
       <section class="footer-content-width">

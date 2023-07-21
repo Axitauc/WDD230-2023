@@ -94,20 +94,15 @@ h2 {
   background: #ee5746;
 }
 
-.boton {
-  border: 2px solid #ee5746;
-  font-size: 0.9rem;
-}
-
-button {
+.form-button {
   /* background-color: white; */
-  color: #ee5746;
-  font-weight: bold;
+  background: #ee5746;
+  font-weight: 300;
   padding: 0.7rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  width: 100%;
   border-radius: 1.5rem;
   border: none;
+  color: white;
 }
 
 /* Footer */
@@ -140,8 +135,10 @@ footer p {
   grid-template-areas:
     "c c f f"
     "a t f f";
-  margin: 5rem;
+  margin: auto;
   gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
 }
 
 /* Contact Section */
@@ -155,6 +152,14 @@ footer p {
 .contact-information-section p a {
   text-decoration: none;
   color: white;
+}
+
+.button {
+  background: #115f60;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.7rem;
 }
 
 .contact-information-section {
@@ -174,7 +179,7 @@ footer p {
 }
 
 #total-drinks-output {
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .contact-information-section p {
@@ -232,12 +237,12 @@ footer p {
 
 .order-number p {
   color: white;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 0.85rem;
 }
 
 .order-number span {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 5rem;
   color: white;
 }
@@ -626,6 +631,7 @@ footer p {
   text-align: center;
   font-size: 0.85rem;
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .weather-card figure {
@@ -751,19 +757,14 @@ footer p {
   letter-spacing: 1px;
   font-size: 0.8rem;
 }
-.button {
-  border: none;
-  font-size: 16px;
-  color: #fff;
-  padding: 8px 16px;
-  background: #077e81;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+.separation {
+  padding: 0.8rem 0;
 }
+
 .button:hover {
-  background: #ee5746;
+  background: #2a9295;
+  cursor: pointer;
 }
 .swiper-navBtn {
   color: #ee5746;
@@ -885,7 +886,7 @@ footer p {
   justify-content: center;
   background: #e44b3a;
   padding: 5rem;
-  margin: 2rem 0ß;
+  margin: 2rem 0;
 }
 
 .container-form p {
@@ -904,7 +905,7 @@ footer p {
   max-width: 700px;
   width: 100%;
   background: #fff;
-  padding: 2rem 5rem;
+  padding: 4rem;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
@@ -920,11 +921,12 @@ footer p {
 }
 .form .input-box {
   width: 100%;
-  margin-top: 20px;
+  margin: 2rem 0;
 }
 .input-box label {
   color: #333;
 }
+
 .form :where(.input-box input, .select-box) {
   position: relative;
   height: 50px;
@@ -937,6 +939,7 @@ footer p {
   border-radius: 6px;
   padding: 0 15px;
 }
+
 .input-box input:focus {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
@@ -975,7 +978,7 @@ footer p {
   color: #707070;
 }
 .address :where(input, .select-box) {
-  margin-top: 15px;
+  margin-top: 2rem;
 }
 .select-box select {
   height: 100%;
@@ -994,14 +997,9 @@ footer p {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #be2c1c;
+  background: #d74b3b;
   border-radius: 2rem;
   margin-top: 2rem;
-}
-.form .form-button:hover {
-  background: white;
-  color: #be2c1c;
-  width: 100%;
 }
 
 .mysubmit {

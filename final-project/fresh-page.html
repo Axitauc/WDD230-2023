@@ -34,6 +34,7 @@
     <script src="./scripts/confirmation.js" defer></script>
     <script src="./scripts/fresh.js" defer></script>
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/counter.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -73,53 +74,75 @@
         <h2>Smoothie Purchase</h2>
         <form
           id="order-form"
-          method="GET"
           action="./confirmation-page.html"
           class="form"
+          method="post"
         >
           <div id="full-name" class="input-box">
-            <label>Full Name</label>
+            <label for="first_name">Full Name</label>
             <input
-              id="first-name-output"
+              type="text"
+              id="first_name"
+              name="first_name"
               placeholder="Enter full name"
               required
             />
           </div>
           <div class="input-box">
-            <label>Email Address</label>
+            <label for="email">Email</label>
             <input
-              id="email-output"
+              type="email"
+              id="email"
+              name="email"
               placeholder="Enter email address"
               required
             />
           </div>
-          <div class="column">
-            <div class="input-box">
-              <label>Phone Number</label>
-              <input
-                id="phone-output"
-                type="number"
-                placeholder="Enter phone number"
-                required
-              />
-            </div>
-          </div>
-          <div class="fruit-box">
-            <h3>Build your own smoothie. You can choose up to 3 options!</h3>
-            <div class="fruit" id="checkbox-container"></div>
-          </div>
-          <div class="input-box address">
-            <label>Special Instructions</label>
+          <div class="input-box">
+            <label for="phone">Phone Number</label>
             <input
-              type="text"
-              id="special-instructions-output"
-              placeholder="Let us know your preferences!"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter phone number"
               required
             />
           </div>
-          <p>Payment is received at the time of the pick up!</p>
+          <div class="separation">
+            <label for="fruit1">Fruit 1:</label>
+            <div class="select-box">
+              <select id="fruit1" name="fruit1" required>
+                <option value="" disabled selected>Fruit</option>
+              </select>
+            </div>
+          </div>
+          <div class="separation">
+            <label for="fruit2">Fruit 2:</label>
+            <div class="select-box">
+              <select id="fruit2" name="fruit2" required>
+                <option value="" disabled selected>Fruit</option>
+              </select>
+            </div>
+          </div>
+          <div class="separation">
+            <label for="fruit3">Fruit 3:</label>
+            <div class="select-box">
+              <select id="fruit3" name="fruit3" required>
+                <option value="" disabled selected>Fruit</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-box">
+            <label for="special_instructions">Special Instructions:</label>
+            <input
+              id="special_instructions"
+              name="special_instructions"
+              placeholder="Let us know your preferences!"
+            ></input>
+          </div>
+          <p>Payment will be requested at pick up time!</p>
           <input type="hidden" name="todaysdate" id="hiddendate" value="" />
-          <button type="submit">Submit</button>
+          <input type="submit" value="Submit" class="form-button" />
         </form>
       </section>
     </main>
