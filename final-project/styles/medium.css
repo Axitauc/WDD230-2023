@@ -125,6 +125,10 @@
     text-align: center;
   }
 
+  .weather-container {
+    flex-direction: column;
+  }
+
   .weather-forecast #weather-forecast-item {
     display: flex;
     align-items: center;
@@ -142,13 +146,14 @@
   }
 
   .weather-card {
-    width: 25rem;
-    padding: 2.5rem;
+    width: 30rem;
+    padding: 2rem;
     line-height: 0.7rem;
   }
 
   .weather-card h3 {
     font-size: 1.3rem;
+    text-transform: capitalize;
   }
 
   .place-card {

@@ -1,79 +1,27 @@
-const timeEl = document.getElementById("time");
-const dateEl = document.getElementById("date");
-const currentWeatherItemsEl = document.getElementById("current-weather-items");
-const timezone = document.getElementById("time-zone");
-const countryEl = document.getElementById("country");
-const weatherForecastEl = document.getElementById("weather-forecast");
-const currentTempEl = document.getElementById("current-temp");
-
-const lat = 19.43;
-const lon = 99.13;
-const appid = "2c9692c4d272bccd1f50b2dad5746a24";
-const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${appid}`;
-
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-
-setInterval(() => {
-  const time = new Date();
-  const month = time.getMonth();
-  const date = time.getDate();
-  const day = time.getDay();
-  const hour = time.getHours();
-  const hoursIn12HrFormat = hour >= 13 ? hour % 12 : hour;
-  const minutes = time.getMinutes();
-  const ampm = hour >= 12 ? "PM" : "AM";
-
-  timeEl.innerHTML =
-    (hoursIn12HrFormat < 10 ? "0" + hoursIn12HrFormat : hoursIn12HrFormat) +
-    ":" +
-    (minutes < 10 ? "0" + minutes : minutes) +
-    " " +
-    `<span id="am-pm">${ampm}</span>`;
-
-  dateEl.innerHTML = days[day] + ", " + date + " " + months[month];
-}, 1000);
+const lat1 = 19.43;
+const lon1 = 99.13;
+const appid1 = "2c9692c4d272bccd1f50b2dad5746a24";
+const weatherURL1 = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat1}&lon=${lon1}&appid=${appid1}`;
 
 function kelvinToFahrenheit(temp) {
   return (((temp - 273.15) * 9) / 5 + 32).toFixed(0);
 }
 
-function displayResults(weatherData) {
-  const currentWeather = weatherData.list[0];
-  const forecasts = weatherData.list.slice(1, 4);
-  const weatherContainer = document.getElementById("weather-forecast-item");
-
-  const currentWeatherCard = createWeatherCard(currentWeather, true);
-  weatherContainer.appendChild(currentWeatherCard);
-
-  forecasts.forEach((forecast) => {
-    const forecastCard = createWeatherCard(forecast, false);
-    weatherContainer.appendChild(forecastCard);
-  });
+function getDayOfWeek(date) {
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const dayIndex = date.getDay();
+  return daysOfWeek[dayIndex];
 }
 
-function createWeatherCard(data, isCurrent) {
+function createWeatherCard(data, isCurrent, dayOfWeek) {
   const date = new Date(data.dt * 1000); // Convertir la fecha UNIX a una fecha legible
   const temp = kelvinToFahrenheit(data.main.temp);
   const desc = data.weather[0].description;
@@ -86,12 +34,7 @@ function createWeatherCard(data, isCurrent) {
   weatherCard.className = "weather-card";
 
   const dateHeading = document.createElement("h3");
-  const options = {
-    weekday: "long",
-    day: "numeric",
-  };
-  const formattedDate = date.toLocaleDateString(undefined, options);
-  dateHeading.textContent = formattedDate;
+  dateHeading.textContent = isCurrent ? "today" : dayOfWeek;
 
   const figure = document.createElement("figure");
   const weatherIcon = document.createElement("img");
@@ -124,7 +67,7 @@ function createWeatherCard(data, isCurrent) {
 
 async function getWeather() {
   try {
-    const response = await fetch(weatherURL);
+    const response = await fetch(weatherURL1);
     if (response.ok) {
       const data = await response.json();
       displayResults(data);
@@ -134,6 +77,28 @@ async function getWeather() {
   } catch (error) {
     console.log(error);
   }
+}
+
+function displayResults(weatherData) {
+  const currentWeather = weatherData.list[0];
+  const forecasts = weatherData.list.slice(1, 4); // Cambiar a 5 para obtener cuatro pronósticos
+  const weatherContainer = document.getElementById("weather-container");
+
+  const currentWeatherCard = createWeatherCard(currentWeather, true);
+  weatherContainer.appendChild(currentWeatherCard);
+
+  let tomorrow = new Date(); // Obtener la fecha de mañana
+  tomorrow.setDate(tomorrow.getDate() + 1); // Establecer la fecha para mañana
+
+  forecasts.forEach((forecast) => {
+    // Calcular el día de la semana para el pronóstico actual (comenzando desde mañana)
+    const dayOfWeek = getDayOfWeek(tomorrow);
+    const forecastCard = createWeatherCard(forecast, false, dayOfWeek);
+    weatherContainer.appendChild(forecastCard);
+
+    // Avanzar al siguiente día para el próximo pronóstico
+    tomorrow.setDate(tomorrow.getDate() + 1);
+  });
 }
 
 getWeather();
