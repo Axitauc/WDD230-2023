@@ -1120,12 +1120,13 @@ footer p {
 }
 
 .grid-container {
-  width: 400px;
+  width: 700px;
+  max-width: 100%;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: white;
-  margin: 0 1rem;
+  margin: auto;
 }
 
 .confirmation-main {
@@ -1192,6 +1193,7 @@ iframe {
 .leave-review h3 {
   padding-top: 1rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .thank-you {
@@ -1202,4 +1204,5 @@ iframe {
   font-weight: 200;
   font-size: 0.9rem;
   font-style: italic;
+  text-align: center;
 }
